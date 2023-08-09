@@ -9,11 +9,20 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+  transition: 0.3s;
 }
 
-.sp-nav__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.sp-nav__container {
+  display: flex;
+}
+
+.sp-nav__wrapper {
+  // width: rem(148);
+}
+
+.sp-nav__wrapper:nth-child(2) {
+  margin-left: rem(7);
 }
 
 .sp-nav.is-open {
@@ -38,7 +47,7 @@
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
   background-position-y: rem(3);
-  margin: rem(20) 0;
+  margin-top: rem(40);
 }
 
 .sp-nav__main a {
@@ -54,6 +63,10 @@
 .sp-nav__sub a {
   display: inline-block;
   padding: rem(12) 0;
+}
+
+.sp-nav__sub:nth-child(4) a {
+  padding-bottom: 0;
 }
 
 .sp-nav__item li:nth-child(2) {

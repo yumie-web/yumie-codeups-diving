@@ -3,9 +3,14 @@
 .header {
   height: rem(80);
   background-color: rgba(13, 41, 54, 0.68);
+  transition: 0.3s;
   @include mq(md) {
     height: rem(90);
   }
+}
+
+.header.is-color {
+  background-color: $accent;
 }
 
 .header__inner {
@@ -71,11 +76,20 @@
   transform: translateY(rem(-11)) rotate(-45deg);
 }
 
+.header__sp-items {
+  margin-top: rem(64);
+}
 
-.header__pc {
+
+.header-pc {
   display: none;
   @include mq(md) {
     display: block;
+    height: inherit;
   }
+}
+
+.header-pc__items {
+  height: inherit;
 }
 
