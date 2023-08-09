@@ -11,6 +11,11 @@
   right: 0;
 }
 
+.sp-nav__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .sp-nav.is-open {
   display: block;
   background-color: $accent;
@@ -33,11 +38,12 @@
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
   background-position-y: rem(3);
+  margin: rem(20) 0;
 }
 
 .sp-nav__main a {
   display: inline-block;
-  padding-left: rem(22);
+  margin-left: rem(22);
   font-weight: 700;
 }
 
@@ -48,5 +54,9 @@
 .sp-nav__sub a {
   display: inline-block;
   padding: rem(12) 0;
+}
+
+.sp-nav__item li:nth-child(2) {
+  margin-top: rem(12);
 }
 
