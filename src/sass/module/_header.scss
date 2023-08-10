@@ -81,7 +81,7 @@
 }
 
 
-.header-pc {
+.header__pc {
   display: none;
   @include mq(md) {
     display: block;
@@ -89,7 +89,7 @@
   }
 }
 
-.header-pc__items {
+.header__pc-items {
   height: inherit;
 }
 

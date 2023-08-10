@@ -17,6 +17,10 @@
   padding-right: 0;
 }
 
+.pc-nav__item:first-child {
+  padding-left: 0;
+}
+
 .pc-nav__item a {
   display: block;
   text-align: center;
