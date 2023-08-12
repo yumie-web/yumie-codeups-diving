@@ -1,0 +1,66 @@
+@use 'global' as *;
+
+.footer {
+  background-color: $accent;
+  color: $white;
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding: rem(80) 0;
+  }
+}
+
+.footer__main-box {
+  @include mq(md) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__logo-link {
+  width: rem(120);
+  height: rem(45);
+  @include mq(md) {
+    width: rem(200);
+    height: rem(75);
+  }
+}
+
+.footer__logo-link img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__sns-icons{
+  display: flex;
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-left: rem(40);
+  }
+}
+
+.footer__insta {
+  margin-left: rem(16);
+}
+
+.footer__facebook,
+.footer__insta {
+  width: rem(24);
+  height: rem(24);
+  @include mq(md) {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: rem(12);
+  line-height: calc(18 / 14);
+  font-family: $en-font-family;
+  margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(14);
+    margin-top: rem(80);
+  }
+}

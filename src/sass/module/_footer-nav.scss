@@ -1,0 +1,86 @@
+@use 'global' as *;
+
+.footer__nav {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.footer-nav__items {
+  display: grid;
+  grid-template-columns: repeat(2, rem(168));
+  // grid-template-rows:
+  //   [campaign],[info],[price](rem(144));
+  // grid-template-rows:
+  //   [about],[blog],[voice],[qa],[privacy],[service],[contact](rem(18));
+  grid-auto-flow: column; //アイテムを縦並び
+  grid-template-areas:
+    "campaign voice"
+    "campaign price"
+    "campaign price"
+    "about price"
+    "info qa"
+    "info privacy"
+    "info service"
+    "blog contact"
+  ;
+  column-gap: rem(16);
+  row-gap: rem(40);
+}
+
+.footer-nav__campaign {
+  grid-area: campaign;
+}
+
+.footer-nav__about {
+  grid-area: about;
+}
+
+.footer-nav__info {
+  grid-area: info;
+}
+
+.footer-nav__blog {
+  grid-area: blog;
+}
+
+.footer-nav__voice {
+  grid-area: voice;
+}
+
+.footer-nav__price {
+  grid-area: price;
+}
+
+.footer-nav__qa {
+  grid-area: qa;
+}
+
+.footer-nav__privacy {
+  grid-area: privacy;
+}
+.footer-nav__service {
+  grid-area: service;
+}
+.footer-nav__contact {
+  grid-area: contact;
+}
+
+.footer-nav__main {
+  background-image: url(../images/common/hitode.png);
+  background-repeat: no-repeat;
+  background-position-y: rem(3);
+}
+
+.footer-nav__main a {
+  display: inline-block;
+  padding-left: rem(22);
+  font-weight: 700;
+  margin-left: rem(2);
+}
+
+.footer-nav__sub {
+  padding-left: rem(24);
+  margin-top: rem(24);
+}
