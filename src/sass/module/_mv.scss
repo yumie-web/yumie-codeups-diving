@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-slide {
+  height: 100vh;
+}
+
+.mv__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  z-index: 1;
+  text-align: center;
+}
+
+.mv__main-title {
+  // font-family: $mv-font;
+  font-size: rem(40);
+  font-weight: 400;
+  letter-spacing: 0.49em;
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: rem(80);
+    line-height: calc(100 / 80);
+    letter-spacing: 0.49em;
+  }
+}
+
+.mv__sub-title {
+  font-family: $en-font-family;
+  font-size: rem(20);
+  font-weight: 400;
+  line-height: calc(33 / 20);
+}

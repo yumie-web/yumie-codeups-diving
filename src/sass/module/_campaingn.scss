@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.campaign-margin {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.campaign__cards {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

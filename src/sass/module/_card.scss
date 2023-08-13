@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.card__img {
+  position: relative;
+}
+
+.card__img::before {
+  content: "";
+  display: block;
+  padding-top: 67.1428%;
+}
+
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

@@ -20,6 +20,7 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -149,6 +151,62 @@
   </header>
 
   <main>
+    <section class="mv">
+      <div class="swiper js-mv-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture class="mv__img">
+              <source srcset="../assets/images/common/mv-1.jpg" media="(min-width: 768px)" type="image/jpg">
+              <img srcset="../assets/images/common/mv-sp-1.jpg" alt="カメの泳いでいるメイン画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="mv__img">
+              <source srcset="../assets/images/common/mv-2.jpg" media="(min-width: 768px)" type="image/jpg">
+              <img srcset="../assets/images/common/mv-sp-2.jpg" alt="船のメイン画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="mv__img">
+              <source srcset="../assets/images/common/mv-3.jpg" media="(min-width: 768px)" type="image/jpg">
+              <img src="../assets/images/common/mv-sp-3.jpg" alt="ビーチのメイン画像">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="mv__header">
+        <h2 class="mv__main-title">diving</h2>
+        <p class="mv__sub-title">into the ocean</p>
+      </div>
+    </section>
+
+    <section class="campaign campaign-margin">
+      <div class="campaign__inner inner">
+        <h2 class="section-title">
+          <div class="section-title__main"><span>C</span>ampaign</div>
+          <p class="section-title__sub">キャンペーン</p>
+        </h2>
+        <div class="campaign__cards cards">
+          <div class="campaign__card card">
+            <figure class="card__img">
+              <img src="../assets/images/common/campaign1.jpg" alt="魚の群れの画像">
+            </figure>
+            <div class="card__body">
+              <div class="card__heading">ライセンス講習</div>
+              <div class="card__title">ライセンス講習</div>
+              <p class="card__text">全部コミコミ(お一人様)</p>
+              <div class="card__price">
+                <p class="card__lowp-rice">¥56,000</p>
+                <p class="card__activ-price">¥46,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
     <!-- タイトル -->
     <h2 class="section-title">
       <div class="section-title__main"><span>C</span>ampaign</div>
