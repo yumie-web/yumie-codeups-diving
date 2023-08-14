@@ -8,6 +8,9 @@
   content: "";
   display: block;
   padding-top: 67.1428%;
+  @include mq(md) {
+    padding-top: 69.7604%;
+  }
 }
 
 .card__img img {
@@ -20,3 +23,77 @@
   object-fit: cover;
 }
 
+.card__body {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: rem(16) rem(16) rem(24);
+  @include mq(md) {
+    padding: rem(24) rem(16) rem(40);
+  }
+}
+
+.card__category {
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: calc(22 / 12);
+  color: $accent;
+  border: 1px solid $accent;
+  padding: rem(4) rem(12);
+  display: inline-block;
+  @include mq(md) {
+    padding: rem(6) rem(16);
+  }
+}
+
+.card__title {
+  font-size: rem(16);
+  color: $main-font;
+  line-height: calc(24 / 16);
+  font-weight: 500;
+  margin-top: rem(4);
+}
+
+.card__text {
+  margin-top: rem(8);
+  padding-top: rem(8);
+  border-top: 1px solid $accent;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  text-align: center;
+
+}
+
+.card__price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: rem(8);
+  font-family: $mv-font;
+}
+
+.card__low-price {
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: 700;
+  color: $main-font;
+  text-decoration: line-through 4px #C94800;
+}
+
+.card__active-price {
+  font-size: rem(32);
+  font-weight: 700;
+  line-height: 1;
+  color: $accent;
+  margin-left: rem(16);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.swiper {
+  width: rem(280);
+}

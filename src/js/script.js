@@ -9,7 +9,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   })
 
-  const swiper = new Swiper('.js-mv-swiper', {
+  // mv
+  var swiper = new Swiper('.js-mv-swiper', {
     // Optional parameters
     loop: true,
     effect: 'fade',
@@ -17,6 +18,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     autoplay: {
       delay: 4000,
     }
+  });
+
+  // campaign
+  var swiper = new Swiper('.js-campaign-swiper', {
+    // Optional parameters
+    loop: true,
+    slidePreView: 1,
+    spaceBetween: 24,
+    allowTouchMove: true,
+    breakpoints: {
+    768: { //768px以上
+      spaceBetween: 40,
+    },
+  },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
 
