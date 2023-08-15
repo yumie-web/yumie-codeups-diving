@@ -1,0 +1,131 @@
+@use 'global' as *;
+
+.about__box {
+  position: relative;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.about__images {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about__image1,
+.about__image2 {
+  position: relative;
+}
+
+.about__image1 {
+  width: 37.1014%;
+  margin-bottom: rem(18);
+  z-index: 2;
+  @include mq(md) {
+    margin-bottom: rem(55);
+  }
+}
+
+.about__image2 {
+  width: 81.4492%;
+  margin-left: rem(-64);
+  z-index: 1;
+  @include mq(md) {
+    margin-left: rem(-200);
+  }
+}
+
+.about__image1::before,
+.about__image2::before {
+  content: "";
+  display: block;
+}
+
+.about__image1::before {
+  padding-top: 151.5625%;
+  @include mq(md) {
+    padding-top: 151.8796%;
+  }
+}
+
+.about__image2::before {
+  padding-top: 66.1921%;
+  @include mq(md) {
+    padding-top: 66.0227%;
+  }
+}
+
+.about__image1 img,
+.about__image2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__text-contents{
+  display: block;
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    top: rem(200);
+    right: rem(41);
+    z-index: 3;
+    width: 77.7777%;
+  }
+}
+
+.about__title {
+  width: 100%;
+  color: $accent;
+  font-family: $en-font-family;
+  font-weight: 400;
+  line-height: 1;
+  font-size: rem(40);
+  margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(80);
+    color: $white;
+    margin-top: 0;
+    width: 47.6190%;
+  }
+}
+
+.about__text-content {
+  width: 100%;
+  @include mq(md) {
+    width: 47.6190%;
+  }
+}
+
+.about__text {
+  color: $main-font;
+  margin-top: rem(16);
+  @include mq(md) {
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+.about__btn {
+  text-align: center;
+  margin-top: rem(40);
+}
+
+.about__bg {
+  display: none;
+  @include mq(md) {
+    position: absolute;
+    width: rem(194);
+    height: rem(181);
+    bottom: rem(-90);
+    right: rem(-97);
+    z-index: 5;
+  }
+}
