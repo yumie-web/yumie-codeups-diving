@@ -24,19 +24,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var swiper = new Swiper('.js-campaign-swiper', {
     // Optional parameters
     loop: true,
-    slidePreView: 1,
+    slidesPerView: "auto",
     spaceBetween: 24,
     allowTouchMove: true,
     breakpoints: {
-    768: { //768px以上
-      spaceBetween: 40,
+      768: { //768px以上
+        slidesPerView: 3.5,
+        spaceBetween: 40,
+      },
     },
-  },
-
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.js-campaign-next',
+      prevEl: '.js-campaign-prev',
     },
   });
 

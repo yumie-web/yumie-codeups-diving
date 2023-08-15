@@ -1,9 +1,11 @@
 @use 'global' as *;
 
-.campaign-margin {
-  margin-top: rem(40);
+.campaign__inner {
+  padding-left: rem(15);
+  padding-right: 0;
   @include mq(md) {
-    margin-top: rem(120);
+    padding-left: rem(180);
+    padding-right: 0;
   }
 }
 
@@ -11,5 +13,40 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
+  }
+}
+
+.campaign__prev,
+.campaign__next {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.campaign__swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include mq(md) {
+  width: 100%;
+  height: 100%;
+  }
+}
+
+.campaign__swiper .swiper-slide {
+  height: rem(388);
+  width: rem(304);
+  @include mq(md) {
+    width: rem(333);
+    height: rem(450);
+  }
+}
+
+.campaign__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
   }
 }

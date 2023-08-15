@@ -1,11 +1,19 @@
 @use 'global' as *;
 
-.swiper-wrapper {
+.mv__swiper {
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-.swiper-slide {
+.mv__slide {
   height: 100vh;
+}
+
+.mv__img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .mv__header {
