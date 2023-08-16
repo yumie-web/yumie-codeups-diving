@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.blog {
+  @include mq(md) {
+    padding-top: 35.7142%;
+    background-image: url(../../assets/images/common/blog-pc-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
+}
+
+.blog__cards {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.blog__card:nth-child(n + 2) {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+
+.blog__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

@@ -18,6 +18,7 @@
 
 .section-title__main span {
   color: #408F95;
+  text-transform: uppercase;
 }
 
 .section-title__sub {
@@ -31,6 +32,21 @@
   }
 }
 
-.section-btn {
-  text-align: center;
+// blog-title
+.blog-title__main {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.section-title__main.blog-title__main span {
+  @include mq(md) {
+    color: #DDF0F1;
+  }
+}
+
+.section-title__sub.blog-title__sub {
+  @include mq(md) {
+    color: $white;
+  }
 }
