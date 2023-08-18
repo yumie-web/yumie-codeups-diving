@@ -1,5 +1,45 @@
 @use 'global' as *;
 
+.voice {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.voice__inner::before {
+  @include mq(md) {
+    display: block;
+    box-sizing: content-box;
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/voice-pc-bg-fishs.png);
+    background-repeat: no-repeat;
+    background-size: rem(301) rem(138);
+    top: rem(-140);
+    left: rem(100);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.voice__inner::after {
+  @include mq(md) {
+    display: block;
+    box-sizing: content-box;
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/voice-bg-pc-tatsu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: rem(-40);
+    right: rem(100);
+    width: rem(71);
+    height: rem(162);
+    z-index: 2;
+  }
+}
+
 .voice__cards {
   margin-top: rem(40);
   @include mq(md) {
