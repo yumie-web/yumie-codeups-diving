@@ -27,16 +27,6 @@
   }
 }
 
-// .blog-fish {
-//   @include mq(md) {
-//     background-image: url(../../assets/images/common/blog-pc-bg-1.png);
-//     background-repeat: no-repeat;
-//     background-size: rem(376) rem(120);
-//     background-position: left top;
-//     width: 100%;
-//   }
-// }
-
 .blog__cards {
   margin-top: rem(24);
   @include mq(md) {
