@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.price {
+  background-color: #DDF0F1;
+}
+
+.price__contents {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.price__img {
+  background-image: url(../../assets/images/common/price-sp.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  padding-top: 65.7971%;
+}
+
+.price__content {
+  color: $main-font;
+}
+
+.price__title {
+  font-weight: 700;
+  line-height: calc(24 / 16);
+  border-bottom: 1px solid $accent;
+  padding-bottom: rem(4);
+}
+
+.price__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: calc(24 / 14);
+}
