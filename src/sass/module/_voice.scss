@@ -14,11 +14,11 @@
     content: "";
     background-image: url(../../assets/images/common/voice-pc-bg-fishs.png);
     background-repeat: no-repeat;
-    background-size: rem(301) rem(138);
+    background-size: cover;
     top: rem(-140);
     left: rem(100);
-    width: 100%;
-    height: 100%;
+    width: rem(301);
+    height: rem(138);
     z-index: 2;
   }
 }
