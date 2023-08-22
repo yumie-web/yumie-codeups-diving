@@ -60,3 +60,11 @@
   line-height: calc(24 / 14);
   margin-top: rem(8);
 }
+
+.price__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

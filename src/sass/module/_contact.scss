@@ -1,24 +1,31 @@
 @use 'global' as *;
 
+.contact {
+  position: relative;
+}
+
 .contact__inner.inner {
   padding: 0 rem(30);
   @include mq(md) {
-    position: relative;
   }
 }
 
-.contact__inner::before {
+.contact::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/images/common/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: rem(-26);
+  right: rem(15);
+  width: rem(109);
+  height: rem(50);
+  z-index: 10;
   @include mq(md) {
-    position: absolute;
-    content: "";
-    background-image: url(../../assets/images/common/contact-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     top: rem(-48);
-    right: rem(-100);
+    right: rem(50);
     width: rem(301);
     height: rem(138);
-    z-index: 10;
   }
 }
 
@@ -82,12 +89,12 @@
 
 .contact__map {
   position: relative;
-  width: 62%;
   // height: 100%;
   // background-color: #D9D9D9;
   margin: auto;
   margin-top: rem(8);
   @include mq(md) {
+    width: 62%;
     margin-top: 0;
     margin-left: rem(20);
   }
@@ -112,7 +119,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 
 .contact__reserve {
   margin-top: rem(40);

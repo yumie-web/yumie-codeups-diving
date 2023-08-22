@@ -3,84 +3,56 @@
 .footer__nav {
   margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(12);
   }
 }
 
-.footer-nav__items {
-  display: grid;
-  grid-template-columns: repeat(2, rem(168));
-  // grid-template-rows:
-  //   [campaign],[info],[price](rem(144));
-  // grid-template-rows:
-  //   [about],[blog],[voice],[qa],[privacy],[service],[contact](rem(18));
-  grid-auto-flow: column; //アイテムを縦並び
-  grid-template-areas:
-    "campaign voice"
-    "campaign price"
-    "campaign price"
-    "about price"
-    "info qa"
-    "info privacy"
-    "info service"
-    "blog contact"
-  ;
-  column-gap: rem(16);
-  row-gap: rem(40);
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  @include mq(md) {
+    gap: rem(60);
+  }
 }
 
-.footer-nav__campaign {
-  grid-area: campaign;
+.footer-nav__left-items:nth-child(n + 2),
+.footer-nav__right-items:nth-child(n + 2){
+  margin-top: rem(16);
 }
 
-.footer-nav__about {
-  grid-area: about;
+.footer-nav{
+  line-height: calc(18 / 16);
 }
 
-.footer-nav__info {
-  grid-area: info;
+.footer-nav__left,
+.footer-nav__right {
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: rem(226);
+    width: 48%;
+    column-gap: rem(120);
+    row-gap: rem(16);
+  }
 }
 
-.footer-nav__blog {
-  grid-area: blog;
+.footer-nav__right {
+  // margin-left: rem(20);
 }
 
-.footer-nav__voice {
-  grid-area: voice;
-}
-
-.footer-nav__price {
-  grid-area: price;
-}
-
-.footer-nav__qa {
-  grid-area: qa;
-}
-
-.footer-nav__privacy {
-  grid-area: privacy;
-}
-.footer-nav__service {
-  grid-area: service;
-}
-.footer-nav__contact {
-  grid-area: contact;
-}
-
-.footer-nav__main {
+.footer-nav__left-item:first-child a,
+.footer-nav__right-item:first-child a {
+  font-weight: 700;
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
-  background-position-y: rem(3);
-}
-
-.footer-nav__main a {
-  display: inline-block;
-  padding-left: rem(22);
-  font-weight: 700;
-  margin-left: rem(2);
-}
-
-.footer-nav__sub {
+  background-position-y: rem(14);
   padding-left: rem(24);
-  margin-top: rem(24);
+}
+
+.footer-nav__left-item a,
+.footer-nav__right-item a {
+  display: inline-block;
+  padding: rem(12) 0;
+  padding-left: rem(24);
 }

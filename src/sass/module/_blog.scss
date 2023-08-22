@@ -11,7 +11,7 @@
   }
 }
 
-.blog__inner::before {
+.blog::before {
   @include mq(md) {
     display: block;
     box-sizing: content-box;

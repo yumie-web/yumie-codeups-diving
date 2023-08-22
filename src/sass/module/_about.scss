@@ -1,5 +1,26 @@
 @use 'global' as *;
 
+.about {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.about::after {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/about-pc-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: rem(-70);
+    right: rem(83);
+    width: rem(194);
+    height: rem(181);
+    z-index: 10;
+  }
+}
+
 .about__box {
   position: relative;
   margin-top: rem(24);

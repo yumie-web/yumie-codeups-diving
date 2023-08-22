@@ -6,7 +6,7 @@
   }
 }
 
-.voice__inner::before {
+.voice::before {
   @include mq(md) {
     display: block;
     box-sizing: content-box;
@@ -23,7 +23,7 @@
   }
 }
 
-.voice__inner::after {
+.voice::after {
   @include mq(md) {
     display: block;
     box-sizing: content-box;
@@ -32,8 +32,8 @@
     background-image: url(../../assets/images/common/voice-bg-pc-tatsu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: rem(-40);
-    right: rem(100);
+    bottom: rem(-60);
+    right: rem(180);
     width: rem(71);
     height: rem(162);
     z-index: 2;
