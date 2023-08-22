@@ -18,6 +18,9 @@
 .footer-nav__left-items:nth-child(n + 2),
 .footer-nav__right-items:nth-child(n + 2){
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 
 .footer-nav{

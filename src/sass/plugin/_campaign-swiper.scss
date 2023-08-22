@@ -46,19 +46,14 @@
 
 .campaign__swiper {
   position: relative;
-  width: 100%;
-  height: 100%;
-  @include mq(md) {
-  width: 100%;
-  height: 100%;
-  }
+  padding-bottom: rem(10);
 }
 
 .campaign__swiper .swiper-slide {
-  height: rem(388);
-  width: rem(304);
+  // height: rem(388);
+  // width: rem(304);
   @include mq(md) {
-    width: rem(333);
-    height: rem(450);
+    // width: rem(333);
+    // height: rem(445);
   }
 }

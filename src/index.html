@@ -20,7 +20,7 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
   <!-- css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -259,7 +260,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="campaign__card card">
                   <figure class="card__img">
                     <img src="../assets/images/common/campaign4.jpg" alt="魚の群れの画像">
@@ -274,7 +275,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- If we need navigation buttons -->
           </div>
@@ -435,7 +436,7 @@
                 </div>
                 <h4 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h4>
               </div>
-              <div class="voice-card__img">
+              <div class="voice-card__img js-color">
                 <img src="../assets/images/common/voice-1.jpg" alt="">
               </div>
             </div>
@@ -458,7 +459,7 @@
                 </div>
                 <h4 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h4>
               </div>
-              <div class="voice-card__img">
+              <div class="voice-card__img js-color">
                 <img src="../assets/images/common/voice-2.jpg" alt="">
               </div>
             </div>
@@ -489,7 +490,7 @@
           <p class="section-title__sub">料金一覧</p>
         </h2>
         <div class="price__container">
-          <div class="price__img"></div>
+          <div class="price__img js-color"></div>
           <div class="price__contents">
             <div class="price__content">
               <h4 class="price__title">ライセンス講習</h4>
