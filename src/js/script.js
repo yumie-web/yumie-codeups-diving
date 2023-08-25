@@ -68,6 +68,50 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  // to-top
+  let topBtn = $('.js-to-top');
+  topBtn.hide();
+
+  // ボタンの表示設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
+  });
+
+
+  // footerの手前でto-topを固定
+  $(window).on("scroll", function () {
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("js-footer").innerHeight();
+    var bottomValue;
+
+    if ($(window).width() <= 768) {
+      // スマートフォンの場合
+      bottomValue = 16; // 16px
+    } else {
+      // タブレットやデスクトップの場合
+      bottomValue = 20;
+    }
+
+    if (scrollHeight - scrollPosition <= footHeight) {
+      // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      $(".to-top").css({
+        position: "absolute",
+        bottom: footHeight + bottomValue,
+      });
+    } else {
+      $(".to-top").css({
+        position: "fixed",
+        bottom: bottomValue,
+      });
+    }
+  });
 
 
 });
