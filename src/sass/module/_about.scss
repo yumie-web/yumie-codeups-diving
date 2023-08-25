@@ -6,7 +6,7 @@
   }
 }
 
-.about::after {
+.about__inner::after {
   @include mq(md) {
     position: absolute;
     content: "";
@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     bottom: rem(-70);
+    // right: rem(83);
     right: rem(83);
     width: rem(194);
     height: rem(181);

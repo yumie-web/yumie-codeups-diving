@@ -2,6 +2,19 @@
 
 .price {
   background-color: #DDF0F1;
+  position: relative;
+}
+
+.price::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/images/common/price-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: rem(60);
+  left: rem(100);
+  width: rem(437);
+  height: rem(201);
 }
 
 .price__container {

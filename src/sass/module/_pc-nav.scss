@@ -22,17 +22,34 @@
 }
 
 .pc-nav__item a {
-  display: block;
   text-align: center;
   height: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.pc-nav__item a::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: rem(24);
+  left: 0;
+  width: 100%;
+  height: rem(1);
+  background-color:#fff;
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+.pc-nav__item a:hover::after {
+  transform: scale(1, 1)
 }
 
 .pc-nav__item-en {
-  // display: block;
   font-size: rem(18);
   font-family: $en-font-family;
   line-height: 1;
@@ -44,7 +61,6 @@
 }
 
 .pc-nav__item-ja {
-  // display: block;
   font-size: rem(10);
   line-height: calc(15 / 10);
   margin-top: rem(4);
