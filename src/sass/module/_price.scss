@@ -2,23 +2,27 @@
 
 .price {
   background-color: #DDF0F1;
-  position: relative;
+  @include mq(md) {
+    position: relative;
+  }
 }
 
 .price::after {
-  position: absolute;
-  content: "";
-  background-image: url(../../assets/images/common/price-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: rem(60);
-  left: rem(100);
-  width: rem(437);
-  height: rem(201);
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/price-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: rem(60);
+    left: rem(100);
+    width: rem(437);
+    height: rem(201);
+  }
 }
 
 .price__container {
-  margin-top: rem(24);
+  margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(40);
     display: flex;
@@ -80,7 +84,7 @@
   font-weight: 700;
   line-height: calc(24 / 16);
   border-bottom: 1px solid $accent;
-  padding-bottom: rem(4);
+  padding-bottom: rem(2);
 }
 
 .price__menu {

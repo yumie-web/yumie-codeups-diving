@@ -24,7 +24,7 @@
 
 .about__box {
   position: relative;
-  margin-top: rem(24);
+  margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(40);
   }

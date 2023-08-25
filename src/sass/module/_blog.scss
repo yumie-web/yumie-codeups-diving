@@ -11,6 +11,10 @@
   }
 }
 
+.blog__inner.inner {
+  padding: 0 rem(20);
+}
+
 .blog::before {
   @include mq(md) {
     display: block;
@@ -29,7 +33,7 @@
 }
 
 .blog__cards {
-  margin-top: rem(24);
+  margin-top: rem(32); //24
   @include mq(md) {
     margin-top: rem(80);
     display: flex;

@@ -14,31 +14,22 @@
 .mv__header {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: $white;
   z-index: 1;
   text-align: center;
-  // animation: fadein-mvheader 5s linear;
   animation-delay: 5s;
 }
 
-// @keyframes fadein-mvheader{
-//   0%{
-//     opacity: 0;
-//   }
-
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
 .mv__main-title {
-  // font-family: $mv-font;
   font-size: rem(40);
   font-weight: 400;
-  letter-spacing: 0.49em;
+  letter-spacing: 0.6em;
+  line-height: calc(48 / 40);
   text-transform: uppercase;
+  -webkit-text-stroke: 1px $black;
+  text-stroke: 1px $black;
   @include mq(md) {
     font-size: rem(80);
     line-height: calc(100 / 80);
@@ -50,5 +41,7 @@
   font-family: $en-font-family;
   font-size: rem(20);
   font-weight: 400;
+  margin-left: rem(-20);
   line-height: calc(33 / 20);
 }
+
