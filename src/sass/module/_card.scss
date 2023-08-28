@@ -9,7 +9,7 @@
   display: block;
   padding-top: 67.1428%;
   @include mq(md) {
-    padding-top: 69.7604%;
+    padding-top: 67.7604%;
   }
 }
 
@@ -30,7 +30,7 @@
 .card__body {
   padding: rem(16) rem(16) rem(24);
   @include mq(md) {
-    padding: rem(24) rem(16) rem(40);
+    padding: rem(24) rem(16) rem(36);
   }
 }
 
@@ -43,7 +43,7 @@
   padding: rem(4) rem(12);
   display: inline-block;
   @include mq(md) {
-    padding: rem(6) rem(16);
+    padding: rem(5) rem(16);
   }
 }
 
@@ -62,6 +62,11 @@
   font-size: rem(14);
   line-height: calc(24 / 14);
   text-align: center;
+  @include mq(md) {
+    padding-top: rem(16);
+    letter-spacing: 0.07em;
+    font-size: rem(16);
+  }
 
 }
 
@@ -74,7 +79,7 @@
 }
 
 .card__low-price {
-  font-size: rem(20);
+  font-size: rem(28);
   line-height: 1;
   font-weight: 700;
   color: $main-font;
@@ -82,10 +87,13 @@
 }
 
 .card__active-price {
-  font-size: rem(32);
+  font-size: rem(40);
   font-weight: 700;
   line-height: 1;
   color: $accent;
   margin-left: rem(16);
+  @include mq(md) {
+    // margin-left: rem(10);
+  }
 }
 

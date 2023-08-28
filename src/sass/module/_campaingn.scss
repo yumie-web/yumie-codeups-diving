@@ -22,7 +22,7 @@
   @include mq(md) {
     display: flex;
     position: absolute;
-    top: rem(-100);
+    top: rem(-104);
     right: 15%;
   }
 }
@@ -31,6 +31,6 @@
   text-align: center;
   margin-top: rem(32);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(72);
   }
 }

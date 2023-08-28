@@ -13,8 +13,8 @@
 
 .mv__header {
   position: absolute;
-  top: 50%;
-  left: 53%;
+  top: 55.5%;
+  left: 52%;
   transform: translate(-50%, -50%);
   color: $white;
   z-index: 1;
@@ -33,7 +33,7 @@
   @include mq(md) {
     font-size: rem(80);
     line-height: calc(100 / 80);
-    letter-spacing: 0.49em;
+    letter-spacing: 0.6em;
   }
 }
 
@@ -41,7 +41,8 @@
   font-family: $en-font-family;
   font-size: rem(20);
   font-weight: 400;
-  margin-left: rem(-20);
+  margin-left: rem(-60);
+  margin-top: rem(4);
   line-height: calc(33 / 20);
 }
 

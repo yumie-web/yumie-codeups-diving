@@ -13,7 +13,7 @@
     background-image: url(../../assets/images/common/about-pc-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: rem(-70);
+    bottom: rem(-86);
     // right: rem(83);
     right: rem(83);
     width: rem(194);
@@ -116,6 +116,7 @@
     color: $white;
     margin-top: 0;
     width: 47.6190%;
+    line-height: calc(100 / 80);
   }
 }
 
