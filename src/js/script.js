@@ -96,19 +96,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       bottomValue = 16; // 16px
     } else {
       // タブレットやデスクトップの場合
-      bottomValue = 20;
+      bottomValue = footHeight;
     }
 
     if (scrollHeight - scrollPosition <= footHeight) {
       // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
-      $(".to-top").css({
+      $(".js-to-top").css({
         position: "absolute",
-        bottom: footHeight + bottomValue,
+        bottom: bottomValue,
       });
     } else {
-      $(".to-top").css({
+      $(".js-to-top").css({
         position: "fixed",
-        bottom: bottomValue,
+        bottom: bottomValue + "px",
       });
     }
   });
