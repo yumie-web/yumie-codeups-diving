@@ -5,9 +5,7 @@
     background-image: url(../../assets/images/common/blog-pc-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    // background-position: top center;
     width: 100%;
-    padding-top: 34.722%;
     position: relative;
   }
 }
@@ -16,12 +14,12 @@
   padding: 0 rem(20);
 }
 
-.blog__inner {
-  position: absolute;
-  top: rem(100);
-  left: 50%;
-  transform: translateX(-50%);
-}
+// .blog__inner {
+//   position: absolute;
+//   top: rem(100);
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
 .blog::before {
   @include mq(md) {

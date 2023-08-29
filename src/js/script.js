@@ -113,6 +113,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // スムーススクロール
+  $('a[href^="#"]').on('click', function() { //hrefの#がクリックされた時
+    var header = $('.header').innerHeight(); //headerの高さを取得
+    var id = $(this).attr('href'); //idの取得
+    var position =0;
+    if ( id != '#') { //idが#じゃない場合 to-topも動くように
+      var position = $(id).offset().top - header; //該当idのtopからheaderの高さを引いた位置の取得(headerと被らないように)
+    }
+  
+    jQuery('html,body').animate({
+      scrollTop: position //topから該当位置までスクロールする
+    },
+    300); //0.3秒かけてスクロール
+  });
+
 
 });
 
