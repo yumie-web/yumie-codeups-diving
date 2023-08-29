@@ -15,8 +15,8 @@
     background-size: contain;
     bottom: rem(-86);
     // right: rem(83);
-    right: rem(83);
     width: rem(194);
+    right: calc(50% - min(50vw,650px));
     height: rem(181);
     z-index: 10;
   }

@@ -23,7 +23,7 @@
   z-index: 10;
   @include mq(md) {
     top: rem(-48);
-    right: rem(50);
+    right: calc(50% - min(48.5vw, rem(670)));
     width: rem(301);
     height: rem(138);
   }
@@ -43,13 +43,10 @@
 .contact__content {
   @include mq(md) {
     width: rem(440);
-    // padding-right: rem(80);
-    // border-right: 1px solid $accent;
   }
 }
 
 .contact__logo {
-  // position: relative;
   width: rem(174);
   height: rem(65);
   text-align: center;

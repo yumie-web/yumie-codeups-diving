@@ -85,7 +85,8 @@
   color: $main-font;
   text-decoration: line-through 4px #C94800;
   @include mq(md) {
-    font-size: rem(28);
+    // font-size: rem(28);
+    font-size: clamp(rem(16), 1.6vw, rem(28));
   }
 }
 
@@ -96,7 +97,8 @@
   color: $accent;
   margin-left: rem(16);
   @include mq(md) {
-    font-size: rem(40);
+    // font-size: rem(40);
+    font-size: clamp(rem(24), 2.7vw, rem(40));
   }
 }
 

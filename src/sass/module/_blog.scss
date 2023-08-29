@@ -7,12 +7,20 @@
     background-size: contain;
     // background-position: top center;
     width: 100%;
+    padding-top: 34.722%;
     position: relative;
   }
 }
 
 .blog__inner.inner {
   padding: 0 rem(20);
+}
+
+.blog__inner {
+  position: absolute;
+  top: rem(100);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .blog::before {
@@ -25,7 +33,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: rem(24);
-    left: rem(100);
+    // left: rem(100);
+    left: calc(50% - min(48.5vw, rem(600)));
     width: rem(376);
     height: rem(120);
     z-index: 2;
