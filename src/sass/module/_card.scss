@@ -79,21 +79,24 @@
 }
 
 .card__low-price {
-  font-size: rem(28);
+  font-size: rem(20);
   line-height: 1;
   font-weight: 700;
   color: $main-font;
   text-decoration: line-through 4px #C94800;
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 
 .card__active-price {
-  font-size: rem(40);
+  font-size: rem(32);
   font-weight: 700;
   line-height: 1;
   color: $accent;
   margin-left: rem(16);
   @include mq(md) {
-    // margin-left: rem(10);
+    font-size: rem(40);
   }
 }
 

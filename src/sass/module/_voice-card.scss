@@ -55,10 +55,12 @@
   font-weight: 500;
   line-height: calc(23 / 16);
   margin-top: rem(4);
-  padding-bottom: rem(1);
+  padding-bottom: rem(4);
   border-bottom: 1px solid $accent;
   @include mq(md) {
   font-size: rem(24);
+  margin-top: rem(4);
+  padding-bottom: rem(1);
   }
 }
 

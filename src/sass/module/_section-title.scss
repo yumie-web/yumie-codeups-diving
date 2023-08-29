@@ -63,4 +63,7 @@
 .section-title__sub--contact {
   margin-top: rem(-4);
   font-size: rem(12);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }

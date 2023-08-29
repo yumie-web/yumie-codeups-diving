@@ -5,7 +5,8 @@
   justify-content: space-around;
   line-height: calc(18 / 16);
   @include mq(md) {
-    gap: rem(60);
+    gap: 0;
+    justify-content: left;
   }
 }
 
@@ -25,13 +26,15 @@
     flex-wrap: wrap;
     height: rem(226);
     width: 48%;
-    column-gap: rem(120);
+    column-gap: rem(48);
     row-gap: rem(16);
   }
 }
 
 .footer-nav__right {
-  // margin-left: rem(20);
+  @include mq(md) {
+    margin-left: rem(40);
+  }
 }
 
 .footer-nav__left-item:first-child a,
