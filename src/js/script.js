@@ -121,7 +121,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     if ( id != '#') { //idが#じゃない場合 to-topも動くように
       var position = $(id).offset().top - header; //該当idのtopからheaderの高さを引いた位置の取得(headerと被らないように)
     }
-  
     jQuery('html,body').animate({
       scrollTop: position //topから該当位置までスクロールする
     },
