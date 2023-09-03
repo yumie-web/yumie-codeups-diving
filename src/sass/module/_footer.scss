@@ -39,18 +39,23 @@
   }
 }
 
-.footer__insta {
+.footer__instagram {
   margin-left: rem(16);
 }
 
 .footer__facebook,
-.footer__insta {
+.footer__instagram {
   width: rem(24);
   height: rem(24);
   @include mq(md) {
     width: rem(32);
     height: rem(32);
   }
+}
+
+.footer__facebook:hover,
+.footer__instagram:hover {
+  opacity: 0.7;
 }
 
 .footer__nav {

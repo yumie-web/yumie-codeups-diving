@@ -2,7 +2,9 @@
 
 .top-price {
   padding: rem(80) 0;
+  margin-top: rem(80);
   @include mq(md) {
     padding: rem(100) 0;
+    margin-top: rem(140);
   }
 }

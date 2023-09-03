@@ -6,6 +6,10 @@
   background-color: $white;
 }
 
+.blog-card:hover {
+  opacity: 0.7;
+}
+
 .blog-card__img {
   position: relative;
 }
