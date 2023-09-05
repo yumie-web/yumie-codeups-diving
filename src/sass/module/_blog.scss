@@ -11,15 +11,13 @@
 }
 
 .blog__inner.inner {
-  padding: 0 rem(20);
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(1130);
+  }
 }
-
-// .blog__inner {
-//   position: absolute;
-//   top: rem(100);
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
 
 .blog::before {
   @include mq(md) {

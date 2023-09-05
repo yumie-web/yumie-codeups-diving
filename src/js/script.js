@@ -26,6 +26,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slidesPerView: 1.26,
     spaceBetween: 24,
     breakpoints: {
+      426: { //426以上
+        slidesPerView: 2.3,
+      },
       768: { //768px以上
         slidesPerView: 3.3,
         spaceBetween: 30,

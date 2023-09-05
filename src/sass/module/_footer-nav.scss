@@ -20,6 +20,7 @@
 
 .footer-nav__left,
 .footer-nav__right {
+  width: 50%;
   @include mq(md) {
     display: flex;
     flex-direction: column;

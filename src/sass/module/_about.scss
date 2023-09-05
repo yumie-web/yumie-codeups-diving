@@ -6,6 +6,15 @@
   }
 }
 
+.about__inner.inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(1130);
+  }
+}
+
 .about__inner::after {
   @include mq(md) {
     position: absolute;

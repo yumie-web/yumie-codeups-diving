@@ -5,6 +5,9 @@
 }
 
 .information__contents {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
   margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(40);
