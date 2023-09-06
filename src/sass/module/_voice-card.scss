@@ -20,6 +20,10 @@
 }
 
 .voice-card__head-main {
+  width: 48%;
+  @include mq(md) {
+    width: 57.740%;
+  }
 }
 
 .voice-card__head-box {
@@ -67,10 +71,11 @@
 .voice-card__img {
   position: relative;
   margin-left: rem(13);
-  width: 100%;
+  width: 48%;
   @include mq(md) {
   margin-left: rem(16);
-  width: 66%;
+  // width: 66%;
+  width: 42.259%;
   }
 }
 

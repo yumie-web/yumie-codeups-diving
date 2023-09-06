@@ -50,12 +50,20 @@
   }
 }
 
+.blog__card {
+  width: 100%;
+  @include mq(md) {
+    width: calc(33.333% - rem(40) * 2 / 3);
+  }
+}
+
 .blog__cards {
   margin-top: rem(32); //24
   @include mq(md) {
     margin-top: rem(80);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -67,10 +75,15 @@
   }
 }
 
+.blog__card:nth-child(n + 4) {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
 .blog__card:nth-child(3n + 1) {
   @include mq(md) {
     margin-left: 0;
-    // margin-top: rem(40);
   }
 }
 
