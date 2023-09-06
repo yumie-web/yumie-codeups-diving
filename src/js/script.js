@@ -4,7 +4,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //ハンバーガー
   $('.js-hamburger').on('click',function(){
     $('.header__drawer').toggleClass('is-open');
-    $('.sp-nav').toggleClass('is-open');
+    // $('.sp-nav').toggleClass('is-open');
+    $('.sp-nav').fadeToggle(400);
     $('.header').toggleClass('is-color')
     return false;
   })
@@ -30,7 +31,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         slidesPerView: 2.3,
       },
       768: { //768px以上
-        slidesPerView: 3.3,
+        slidesPerView: 3.2,
         spaceBetween: 30,
       },
       1024: { //1024px以上

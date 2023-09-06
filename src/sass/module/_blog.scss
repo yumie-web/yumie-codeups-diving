@@ -2,10 +2,6 @@
 
 .blog {
   @include mq(md) {
-    background-image: url(../../assets/images/common/blog-pc-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
     position: relative;
   }
 }
@@ -19,6 +15,7 @@
   }
 }
 
+// お魚
 .blog::before {
   @include mq(md) {
     display: block;
@@ -37,11 +34,28 @@
   }
 }
 
+// PC時の背景
+.blog::after {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/blog-pc-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: rem(500);
+    width: 100%;
+    z-index: -1;
+  }
+}
+
 .blog__cards {
   margin-top: rem(32); //24
   @include mq(md) {
     margin-top: rem(80);
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -50,6 +64,13 @@
   @include mq(md) {
     margin-top: 0;
     margin-left: rem(40);
+  }
+}
+
+.blog__card:nth-child(3n + 1) {
+  @include mq(md) {
+    margin-left: 0;
+    // margin-top: rem(40);
   }
 }
 

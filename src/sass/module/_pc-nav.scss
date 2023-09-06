@@ -9,7 +9,8 @@
 
 .pc-nav__item {
   color: $white;
-  padding: 0 rem(20);
+  // padding: 0 rem(20);
+  padding: 0 clamp(rem(5), 1.2vw, rem(20));
   height: inherit;
 }
 
@@ -17,9 +18,9 @@
   padding-right: 0;
 }
 
-.pc-nav__item:first-child {
-  padding-left: 0;
-}
+// .pc-nav__item:first-child {
+//   padding-left: 0;
+// }
 
 .pc-nav__item a {
   text-align: center;
