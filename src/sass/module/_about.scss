@@ -19,7 +19,7 @@
   @include mq(md) {
     position: absolute;
     content: "";
-    background-image: url(../../assets/images/common/about-pc-bg.png);
+    background-image: url(./../images/common/about-pc-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     bottom: rem(-86);

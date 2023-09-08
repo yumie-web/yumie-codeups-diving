@@ -202,13 +202,15 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide ">
+              <div class="swiper-slide">
                 <div class="campaign__card card">
                   <figure class="card__img">
                     <img src="./assets/images/common/campaign1.jpg" alt="魚の群れの画像">
                   </figure>
                   <div class="card__body">
-                    <div class="card__category">ライセンス講習</div>
+                    <div class="card__category">
+                      <p>ライセンス講習</p>
+                    </div>
                     <div class="card__title">ライセンス講習</div>
                     <p class="card__text">全部コミコミ(お一人様)</p>
                     <div class="card__price">
@@ -224,7 +226,9 @@
                     <img src="./assets/images/common/campaign2.jpg" alt="魚の群れの画像">
                   </figure>
                   <div class="card__body">
-                    <div class="card__category">体験ダイビング</div>
+                    <div class="card__category">
+                      <p>体験ダイビング</p>
+                    </div>
                     <div class="card__title">貸切体験ダイビング</div>
                     <p class="card__text">全部コミコミ(お一人様)</p>
                     <div class="card__price">
@@ -240,7 +244,9 @@
                     <img src="./assets/images/common/campaign3.jpg" alt="魚の群れの画像">
                   </figure>
                   <div class="card__body">
-                    <div class="card__category">体験ダイビング</div>
+                    <div class="card__category">
+                      <p>体験ダイビング</p>
+                    </div>
                     <div class="card__title">ナイトダイビング</div>
                     <p class="card__text">全部コミコミ(お一人様)</p>
                     <div class="card__price">
@@ -256,7 +262,9 @@
                     <img src="./assets/images/common/campaign4.jpg" alt="魚の群れの画像">
                   </figure>
                   <div class="card__body">
-                    <div class="card__category">ファンダイビング</div>
+                    <div class="card__category">
+                      <p>ファンダイビング</p>
+                    </div>
                     <div class="card__title">貸切ファンダイビング</div>
                     <p class="card__text">全部コミコミ(お一人様)</p>
                     <div class="card__price">
@@ -365,7 +373,7 @@
             </div>
             <div class="blog-card__contents">
               <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
-              <h4 class="blog-card__title">ライセンス取得</h4>
+              <h3 class="blog-card__title">ライセンス取得</h3>
               <p class="blog-card__text">
                 ここにテキストが入ります。ここにテキストが入ります。
                 ここにテキストが入ります。ここにテキストが入ります。<br>
@@ -379,7 +387,7 @@
             </div>
             <div class="blog-card__contents">
               <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
-              <h4 class="blog-card__title">ウミガメと泳ぐ</h4>
+              <h3 class="blog-card__title">ウミガメと泳ぐ</h3>
               <p class="blog-card__text">
                 ここにテキストが入ります。ここにテキストが入ります。
                 ここにテキストが入ります。ここにテキストが入ります。<br>
@@ -393,7 +401,7 @@
             </div>
             <div class="blog-card__contents">
               <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
-              <h4 class="blog-card__title">カクレクマノミ</h4>
+              <h3 class="blog-card__title">カクレクマノミ</h3>
               <p class="blog-card__text">
                 ここにテキストが入ります。ここにテキストが入ります。
                 ここにテキストが入ります。ここにテキストが入ります。<br>
@@ -410,6 +418,7 @@
       </div>
     </section>
 
+    <!-- voice -->
     <section class="voice top-voice" id="voice">
       <div class="voice__inner inner">
         <h2 class="section-title">
@@ -424,7 +433,7 @@
                   <p class="voice-card__age">20代(女性)</p>
                   <div class="voice-card__category">ライセンス講習</div>
                 </div>
-                <h4 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h4>
+                <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
               <div class="voice-card__img js-color">
                 <img src="./assets/images/common/voice-1.jpg" alt="20代女性の画像">
@@ -447,7 +456,7 @@
                   <p class="voice-card__age">20代(男性)</p>
                   <div class="voice-card__category">ファンダイビング</div>
                 </div>
-                <h4 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h4>
+                <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
               <div class="voice-card__img js-color">
                 <img src="./assets/images/common/voice-2.jpg" alt="20代男性の画像">
@@ -480,10 +489,13 @@
           <p class="section-title__sub">料金一覧</p>
         </h2>
         <div class="price__container">
-          <div class="price__img js-color"></div>
+          <picture class="price__img js-color">
+            <source srcset="./assets/images/common/price-pc.jpg" media="(min-width: 768px)" type="image/jpg">
+            <img src="./assets/images/common/price-sp.jpg" alt="ウミガメの画像">
+          </picture>
           <div class="price__contents">
             <div class="price__content">
-              <h4 class="price__title">ライセンス講習</h4>
+              <h3 class="price__title">ライセンス講習</h3>
               <dl class="price__menu">
                 <dt>オープンウォーターダイバーコース</dt>
                 <dd>¥50,000</dd>
@@ -498,7 +510,7 @@
               </dl>
             </div>
             <div class="price__content">
-              <h4 class="price__title">体験ダイビング</h4>
+              <h3 class="price__title">体験ダイビング</h3>
               <dl class="price__menu">
                 <dt>ビーチ体験ダイビング(半日)</dt>
                 <dd>¥7,000</dd>
@@ -517,7 +529,7 @@
               </dl>
             </div>
             <div class="price__content">
-              <h4 class="price__title">ファンダイビング</h4>
+              <h3 class="price__title">ファンダイビング</h3>
               <dl class="price__menu">
                 <dt>ビーチダイビング(2ダイブ)</dt>
                 <dd>¥14,000</dd>
@@ -536,7 +548,7 @@
               </dl>
             </div>
             <div class="price__content">
-              <h4 class="price__title">スペシャルダイビング</h4>
+              <h3 class="price__title">スペシャルダイビング</h3>
               <dl class="price__menu">
                 <dt>貸切ダイビング(2ダイブ)</dt>
                 <dd>¥24,000</dd>
@@ -560,9 +572,9 @@
       <div class="contact__inner inner">
         <div class="contact__container">
           <div class="contact__content">
-            <h3 class="contact__logo">
+            <div class="contact__logo">
               <img src="./assets/images/common/contact-logo-title.png" alt="codeupsのロゴ">
-            </h3>
+            </div>
             <div class="contact__access">
               <div class="contact__address">
                 <p>沖縄県那覇市1-1</p>

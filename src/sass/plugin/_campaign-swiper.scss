@@ -50,6 +50,7 @@
 }
 
 .campaign__swiper .swiper-slide {
+  height: auto;
   // height: rem(388);
   // width: rem(304);
   @include mq(md) {
