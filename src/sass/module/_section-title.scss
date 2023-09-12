@@ -16,7 +16,7 @@
   }
 }
 
-.section-title__main span {
+.section-title__main::first-letter {
   color: #408F95;
   text-transform: uppercase;
 }
@@ -33,19 +33,19 @@
 }
 
 // blog-title
-.blog-title__main {
+.section-title__main--blog {
   @include mq(md) {
     color: $white;
   }
 }
 
-.section-title__main.blog-title__main span {
+.section-title__main--blog::first-letter {
   @include mq(md) {
     color: #DDF0F1;
   }
 }
 
-.section-title__sub.blog-title__sub {
+.section-title__sub--blog {
   @include mq(md) {
     color: $white;
   }

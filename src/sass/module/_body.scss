@@ -3,3 +3,10 @@
 body {
   position: relative;
 }
+
+// ドロワー展開時、下をスクロールさせない
+// jQueryで.active付与
+.body.js-active {
+  height: 100%;
+  overflow: hidden;
+}

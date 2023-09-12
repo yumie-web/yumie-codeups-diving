@@ -38,9 +38,12 @@
 
 .price__img  {
   position: relative;
-  // display: block;
-  width: 50%;
-  margin-left: rem(96);
+  margin-left: 0;
+  width: 100%;
+  @include mq(md) {
+    width: 50%;
+    margin-left: rem(96);
+  }
 }
 
 .price__img::before {
@@ -108,12 +111,15 @@
 }
 
 .price__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-size: rem(14);
   font-weight: 400;
   line-height: calc(24 / 14);
+}
+
+.price__menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: rem(8);
 }
 

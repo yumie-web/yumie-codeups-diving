@@ -7,6 +7,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // $('.sp-nav').toggleClass('is-open');
     $('.sp-nav').fadeToggle(400);
     $('.header').toggleClass('is-color')
+    $(".body").toggleClass("js-active");
     return false;
   })
 
@@ -28,7 +29,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     breakpoints: {
       426: { //426以上
-        slidesPerView: 2.3,
+        slidesPerView: 1.6,
+      },
+      580: {
+        slidesPerView: 2.2,
       },
       768: { //768px以上
         slidesPerView: 3.2,

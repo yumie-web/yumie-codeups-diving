@@ -7,16 +7,19 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 0;
+  top: rem(80);
   left: 0;
   right: 0;
   z-index: -10;
   transition: all 0.5s;
+  overflow-y: scroll;
 }
 
 .sp-nav__container {
   display: flex;
   justify-content: space-around;
+  // padding-top: rem(64);
+  padding-bottom: rem(116);
 }
 
 .sp-nav__wrapper:nth-child(2) {
@@ -51,7 +54,7 @@
 }
 
 .sp-nav__main a {
-  display: inline-block;
+  display: block;
   margin-left: rem(22);
   font-weight: 700;
 }
