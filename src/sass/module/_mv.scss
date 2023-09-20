@@ -19,11 +19,6 @@
   color: $white;
   z-index: 1;
   text-align: center;
-  animation-delay: 5s;
-  @include mq(md) {
-    top: 55.5%;
-    left: 52%;
-  }
 }
 
 .mv__main-title {

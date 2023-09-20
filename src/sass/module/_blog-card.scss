@@ -5,10 +5,12 @@
   padding: rem(14) rem(16) rem(24) rem(16);
   background-color: $white;
   display: block;
+  transition: 0.3s;
 }
 
 .blog-card:hover {
-  opacity: 0.7;
+  transform: translateY(rem(-5));
+  cursor: pointer;
 }
 
 .blog-card__img {

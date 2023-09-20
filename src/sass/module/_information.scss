@@ -76,19 +76,19 @@
   font-size: rem(20);
   font-weight: 700;
   line-height: 1;
+  border-bottom: 1px solid $accent;
+  padding-bottom: rem(8);
   @include mq(md) {
     font-size: rem(24);
+    padding-bottom: rem(8);
   }
 }
 
 .information__text {
   margin-top: rem(4);
-  padding-top: rem(8);
-  border-top: 1px solid $accent;
   line-height: calc(24 / 16);
   @include mq(md) {
     margin-top: rem(5); //0.6
-    padding-top: rem(8); //0.8
   }
 }
 
