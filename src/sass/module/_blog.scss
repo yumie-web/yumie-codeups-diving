@@ -22,7 +22,7 @@
     box-sizing: content-box;
     position: absolute;
     content: "";
-    background-image: url(./../images/common/blog-pc-bg-1.png);
+    background-image: url(./../images/common/blog-pc-bg-1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     top: rem(24);
@@ -39,7 +39,7 @@
   @include mq(md) {
     position: absolute;
     content: "";
-    background-image: url(./../images/common/blog-pc-bg.jpg);
+    background-image: url(./../images/common/blog-pc-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
@@ -54,19 +54,6 @@
   margin-top: rem(32); //24
   @include mq(md) {
     margin-top: rem(80);
-  }
-}
-
-.blog__card:nth-child(n + 2) {
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-
-.blog__card:nth-child(3n + 1) {
-  @include mq(md) {
-    margin-left: 0;
   }
 }
 

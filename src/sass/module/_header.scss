@@ -84,10 +84,6 @@
   transform: translateY(rem(-11)) rotate(-45deg);
 }
 
-.header__sp-items {
-  
-}
-
 .header__pc {
   display: none;
   @include mq(md) {

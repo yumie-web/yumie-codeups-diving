@@ -2,7 +2,6 @@
 
 .sp-nav {
   display: none;
-  // opacity: 0;
   background-color: $accent;
   width: 100vw;
   height: 100vh;
@@ -18,7 +17,6 @@
 .sp-nav__container {
   display: flex;
   justify-content: space-around;
-  // padding-top: rem(64);
   padding-bottom: rem(116);
 }
 
@@ -28,7 +26,6 @@
 
 .sp-nav.is-open {
   display: block;
-  // opacity: 1;
   background-color: $accent;
   width: 100vw;
   height: 100vh;
@@ -37,42 +34,23 @@
   left: 0;
   right: 0;
   padding-left: rem(15);
-  // z-index: 10;
 }
 
-.sp-nav__item {
+.sp-nav__items {
   color: $white;
   font-size: rem(16);
   line-height: calc(18 / 16);
+  margin-top: rem(28);
 }
 
-.sp-nav__main {
+.sp-nav__item a {
+  display: block;
+  font-weight: 700;
+  padding: rem(12) 0 rem(12) rem(22);
+}
+
+.sp-nav__item:first-child a {
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
-  background-position-y: rem(3);
-  margin-top: rem(40);
+  background-position-y: rem(12);
 }
-
-.sp-nav__main a {
-  display: block;
-  margin-left: rem(22);
-  font-weight: 700;
-}
-
-.sp-nav__sub {
-  padding-left: rem(22);
-}
-
-.sp-nav__sub a {
-  display: inline-block;
-  padding: rem(12) 0;
-}
-
-.sp-nav__sub:nth-child(4) a {
-  padding-bottom: 0;
-}
-
-.sp-nav__item li:nth-child(2) {
-  margin-top: rem(12);
-}
-
