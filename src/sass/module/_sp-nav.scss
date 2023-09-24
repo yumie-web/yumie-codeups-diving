@@ -45,12 +45,13 @@
 
 .sp-nav__item a {
   display: block;
-  font-weight: 700;
   padding: rem(12) 0 rem(12) rem(22);
 }
 
-.sp-nav__item:first-child a {
+.sp-nav__item--first a {
+  font-weight: 700;
   background-image: url(../images/common/hitode.png);
   background-repeat: no-repeat;
   background-position-y: rem(12);
 }
+
