@@ -112,3 +112,34 @@
   }
 }
 
+// 下層ページ キャンペーン
+.card__des--sub-campaign {
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-top: rem(24);
+    line-height: calc(24 / 16);
+  }
+}
+
+.card__contact--sub-campaign {
+  display: none;
+  @include mq(md) {
+    display: block;
+    text-align: center;
+    margin-top: rem(32);
+  }
+}
+.card__date--sub-campaign,
+.card__info--sub-campaign {
+  color: $accent;
+}
+
+.card__info--sub-campaign {
+  margin-top: rem(7);
+}
+
+.card__btn--sub-campaign {
+  margin-top: rem(16);
+}
+
