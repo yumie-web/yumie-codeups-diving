@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.sub-bg {
+  position: relative;
+}
+
+.sub-bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(./../images/common/voice-pc-bg-fishs.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: rem(-25);
+  left: calc(50% - min(46vw, rem(200)));
+  width: rem(120);
+  height: rem(55);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(300);
+    height: rem(138);
+    top: rem(-72);
+    left: calc(50% - min(48.5vw, rem(610)));
+  }
+}
