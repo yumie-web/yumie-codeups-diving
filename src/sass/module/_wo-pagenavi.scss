@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.wp-pagenavi {
+  // clear: both;
+  text-align: center;
+}
+.wp-pagenavi__numbers,
+.wp-pagenavi__previouspostslink,
+.wp-pagenavi__nextpostslink {
+  color: $accent;
+  background-color: #fff;
+  border: solid 1px $accent;
+  padding: rem(10) rem(14);
+  font-size: rem(16);
+  font-weight: 700;
+  // white-space: nowrap;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  // text-align: center;
+  // text-decoration: none;
+}
+
+.wp-pagenavi__numbers:nth-child(n +2) {
+  margin-left: rem(8);
+}
+
+.wp-pagenavi__numbers:hover,
+.wp-pagenavi__previouspostslink:hover,
+.wp-pagenavi__nextpostslink:hover {
+  color: #fff;
+  background-color: $accent;
+  border-color: $accent;
+}
+
+.wp-pagenavi__numbers--current {
+  color: #fff;
+  background-color: $accent;
+  border-color: $accent;
+}
+
+.wp-pagenavi__pc {
+  display: none;
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.wp-pagenavi__block {
+  display: inline-block;
+  margin: 0 rem(28);
+}
