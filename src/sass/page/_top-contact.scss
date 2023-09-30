@@ -6,3 +6,10 @@
     margin-top: rem(160);
   }
 }
+
+.top-contact--campaign {
+  margin-top: rem(112);
+  @include mq(md) {
+    margin-top: rem(144);
+  }
+}

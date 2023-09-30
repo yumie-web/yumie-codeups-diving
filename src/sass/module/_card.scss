@@ -117,7 +117,7 @@
   display: none;
   @include mq(md) {
     display: block;
-    margin-top: rem(24);
+    margin-top: rem(22);
     line-height: calc(24 / 16);
   }
 }
@@ -127,19 +127,32 @@
   @include mq(md) {
     display: block;
     text-align: center;
-    margin-top: rem(32);
+    margin-top: rem(24);
   }
 }
 .card__date--sub-campaign,
 .card__info--sub-campaign {
   color: $accent;
+  font-size: rem(14);
 }
 
 .card__info--sub-campaign {
-  margin-top: rem(7);
+  margin-top: rem(8);
 }
 
 .card__btn--sub-campaign {
-  margin-top: rem(16);
+  margin-top: rem(13);
+}
+
+.card__title--campaign {
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.card__body--campaign {
+  @include mq(md) {
+    padding: rem(24) rem(24) rem(36);
+  }
 }
 
