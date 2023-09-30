@@ -161,3 +161,26 @@
     z-index: 5;
   }
 }
+
+// 下層 私たちについて
+.about__inner.about__inner--sango::after {
+  content: none;
+}
+
+.about__image1--none {
+  display: none;
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.about__image2--sp {
+  margin-left: 0;
+  width: 100%;
+  z-index: 1;
+  @include mq(md) {
+    margin-left: rem(-200);
+    width: 82.4492%;
+    z-index: 1;
+  }
+}

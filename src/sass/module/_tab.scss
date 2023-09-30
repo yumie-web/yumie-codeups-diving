@@ -23,7 +23,7 @@
   color: $accent;
   border: 1px solid $accent;
   font-size: rem(14);
-  line-height: (22 / 14);
+  line-height: calc(22 / 14);
   padding: rem(5) 0;
   width: 100%;
   transition: 0.3s;
