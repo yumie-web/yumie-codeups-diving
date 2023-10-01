@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.sub-about-pictures__contents {
+  display: grid;
+  gap: rem(8);
+  @include mq(md) {
+    max-width: rem(1080);
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.sub-about-pictures__content1 {
+  @include mq(md) {
+    grid-column: 1 /2;
+    grid-row: 1 /3;
+  }
+}

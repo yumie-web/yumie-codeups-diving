@@ -6,3 +6,11 @@
     margin-top: rem(140);
   }
 }
+
+// 下層ページ
+.top-about--sub-about {
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}

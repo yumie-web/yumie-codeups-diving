@@ -19,7 +19,7 @@
   @include mq(md) {
     position: absolute;
     content: "";
-    background-image: url(./../images/common/about-pc-bg.png);
+    background-image: url(./../images/common/about-pc-bg.webp);
     background-repeat: no-repeat;
     background-size: contain;
     bottom: rem(-86);
@@ -150,17 +150,6 @@
   margin-top: rem(40);
 }
 
-.about__bg {
-  display: none;
-  @include mq(md) {
-    position: absolute;
-    width: rem(194);
-    height: rem(181);
-    bottom: rem(-90);
-    right: rem(-97);
-    z-index: 5;
-  }
-}
 
 // 下層 私たちについて
 .about__inner.about__inner--sango::after {
@@ -175,6 +164,7 @@
 }
 
 .about__image2--sp {
+  position: relative;
   margin-left: 0;
   width: 100%;
   z-index: 1;
@@ -184,3 +174,43 @@
     z-index: 1;
   }
 }
+
+.about__title--sp {
+  position: absolute;
+  top: rem(24);
+  left: rem(24);
+  z-index: 2;
+  margin-top: 0;
+  color: $white;
+  width: 60%;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.about__title--pc {
+  display: none;
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.sub-bg.about__bg::before {
+  z-index: 4;
+  @include mq(md) {
+    z-index: 1;
+  }
+}
+
+.about__text--sp {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+
+// .about__text-contents--pc {
+//   @include mq(md) {
+//     align-items: flex-end;
+//   }
+// }
