@@ -146,4 +146,25 @@ jQuery(function ($) {
   //   },
   //   300); //0.3秒かけてスクロール
   // });
+
+  // about モーダル表示
+  $(".sub-about-gallery__content img").click(function () {
+    $(".sub-about-gallery__model").html($(this).prop("outerHTML"));
+    $(".sub-about-gallery__model").fadeIn(200);
+    $(".js-header, .js-to-top").hide();
+    $('html, body').css('overflow', 'hidden');
+    return false;
+  });
+
+  // about モーダル非表示
+  $(".sub-about-gallery__model").click(function () {
+    $(".sub-about-gallery__model").fadeOut(200);
+    $(".js-header, .js-to-top").fadeIn(200);
+    $('html, body').removeAttr('style');
+    return false;
+  });
+
+
+
+
 });

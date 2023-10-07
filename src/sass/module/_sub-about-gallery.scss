@@ -4,6 +4,15 @@
   position: relative;
 }
 
+.sub-about-gallery__inner.inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(1130);
+  }
+}
+
 .sub-about-gallery::before {
   content: none;
   position: absolute;
@@ -26,13 +35,8 @@
   gap: rem(8);
   grid-auto-flow: dense;
   margin-top: rem(40);
-  max-width: rem(650);
-  width: 100%;
-  margin-inline: auto;
   @include mq(md) {
     margin-top: rem(80);
-    max-width: rem(1080);
-    width: 100%;
     grid-template-columns: repeat(9, 1fr);
     grid-auto-flow: dense; //空白を埋めてくれる
   }
@@ -52,6 +56,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 // 1枚目(縦長)
@@ -95,4 +100,31 @@
     grid-column: span 4;
     grid-row: span 4;
   }
+}
+
+.sub-about-gallery__model {
+  background-color: rgba(32, 32, 32, 0.80);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+  
+}
+
+.sub-about-gallery__model img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // margin: auto;
+  display: block;
+  aspect-ratio: 920 / 586;
+  object-fit: cover;
+  max-width: rem(920);
+  // width: 100%;
 }
