@@ -149,10 +149,14 @@ jQuery(function ($) {
 
   // about モーダル表示
   $(".sub-about-gallery__content img").click(function () {
+    // .sub-about-gallery__content imgをクリックした時
     $(".sub-about-gallery__model").html($(this).prop("outerHTML"));
+    // クリックされた画像要素の外部htmlを取得→.sub-about-gallery__modelの中に挿入
+    // クリックされた画像をモデルとして表示するためのコンテンツを生成
     $(".sub-about-gallery__model").fadeIn(200);
     $(".js-header, .js-to-top").hide();
     $('html, body').css('overflow', 'hidden');
+    // スクロール禁止
     return false;
   });
 
