@@ -1,0 +1,139 @@
+@use "global" as *;
+
+.sub-info__container {
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+  margin-top: rem(121);
+  @include mq(md) {
+    max-width: 100%;
+    margin-inline: 0;
+    margin-top: rem(150);
+  }
+}
+
+.sub-info__bg::before {
+  top: rem(-90);
+}
+
+// タグ
+.sub-info__tag-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-info__tag-item a {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(14);
+  font-weight: 400;
+  padding: rem(10) rem(16);
+  background-color: #ddf0f1;
+  color: $accent;
+  line-height: calc(20 / 14);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  @include mq(md) {
+    position: relative;
+    font-size: rem(24);
+    padding: rem(29) rem(18) rem(25) rem(90);
+  }
+}
+
+.sub-info__tag-item a::before {
+  content: none;
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(./../images/common/sub-info-tag1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: rem(13);
+    left: rem(22);
+    width: rem(64);
+    height: rem(64);
+  }
+}
+
+.sub-info__tag-item:nth-child(2) a::before {
+  @include mq(md) {
+    background-image: url(./../images/common/sub-info-tag2.webp);
+  }
+}
+
+.sub-info__tag-item:nth-child(3) a::before {
+  @include mq(md) {
+    background-image: url(./../images/common/sub-info-tag3.webp);
+  }
+}
+
+.sub-info__tag-item.js-active a {
+  background-color: $accent;
+  color: $white;
+}
+
+// カード js切り替え
+.sub-info__card {
+  display: none;
+}
+
+.sub-info__card.js-open {
+  display: block;
+}
+
+// カード中身
+.sub-info__contents {
+  margin-top: rem(16);
+  display: block;
+  padding: rem(24);
+  border: 1px solid $accent;
+  @include mq(md) {
+    margin-top: rem(24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $accent;
+  }
+}
+
+.sub-info__text-box {
+  width: 100%;
+  @include mq(md) {
+    width: calc(calc(494 / 1032) * 100%);
+  }
+}
+
+.sub-info__card-title {
+  font-size: rem(24);
+  line-height: 1;
+  color: $main-font;
+  font-weight: 700;
+  border-bottom: 1px solid $accent;
+  padding-bottom: rem(8);
+}
+
+.sub-info__text {
+  color: $black;
+  line-height: calc(24 / 16);
+  margin-top: rem(8);
+}
+
+.sub-info__picture {
+  margin-top: rem(8);
+  width: 100%;
+  @include mq(md) {
+    margin-top: 0;
+    // margin-left: rem(48);
+    width: calc(calc(494 / 1032) * 100%);
+  }
+}
+
+.sub-info__picture img {
+  aspect-ratio: 297 / 189;
+  width: 100%;
+  height: 100%;
+  @include mq(md) {
+    aspect-ratio: 492 / 313;
+  }
+}

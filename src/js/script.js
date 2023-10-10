@@ -168,7 +168,20 @@ jQuery(function ($) {
     return false;
   });
 
+  // 下層(ダイビング情報 タブ)
+  $('.sub-info__tag-item').on('click', function () {
+    // ↓ タグをクリックした時の色の変更
+    $('.sub-info__tag-item').removeClass('js-active');
+    $(this).addClass('js-active');
 
+    // ↓ 最初のカードについてるjs-openを無くす
+    $('.sub-info__card').removeClass('js-open');
+    // ↓ sub-info__tag-itemのaタグのhrefの値を取得
+    //   hrefに指定した値と同じ要素にjs-openを付与する
+    //   (タグのhrefの値＝カードのidの値の時)
+    $($(this).children('a').attr('href')).addClass('js-open');
+    return false;
+  });
 
 
 });
