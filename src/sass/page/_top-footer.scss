@@ -6,3 +6,11 @@
     margin-top: rem(160);
   }
 }
+
+// 下層 ダイビング情報
+.top-footer--info {
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(152);
+  }
+}

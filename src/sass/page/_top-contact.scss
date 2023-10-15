@@ -22,3 +22,10 @@
     margin-top: rem(144);
   }
 }
+
+// 下層 ダイビング情報
+.top-contact--info {
+  @include mq(md) {
+    margin-top: rem(157);
+  }
+}
