@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.blog-side {
+  max-width: rem(294);
+  margin-inline: auto;
+  width: 100%;
+}
+
+.blog-side__contents:nth-child(n + 2) {
+  margin-top: rem(80);
+}
+
+.blog-side__popular-articles {
+  margin-top: rem(24);
+}
+
+.blog-side__review-card {
+  margin-top: rem(24);
+}
+
+.blog-side__btn {
+  text-align: center;
+  margin-top: rem(44);
+}
+
+.blog-side__card:nth-child(n + 2) {
+  margin-top: rem(40);
+}
+
+.blog-side__accordion {
+  color: $accent;
+  font-size: rem(24);
+}
+
+.blog-side__accordion p {
+  text-indent: rem(24);
+  padding-left: rem(24);
+  position: relative;
+}
+
+.blog-side__accordion p::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 15px;
+  border-color: transparent transparent transparent $accent;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(24);
+}

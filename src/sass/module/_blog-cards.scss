@@ -15,3 +15,13 @@
     margin-top: 0;
   }
 }
+
+// 下層 ブログ一覧
+.blog-cards--blog-list {
+  display: block;
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(80) rem(40);
+  }
+}

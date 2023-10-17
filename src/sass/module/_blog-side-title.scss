@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.blog-side-title {
+  position: relative;
+  padding-left: rem(82);
+  font-size: rem(24);
+  font-weight: 400;
+}
+
+.blog-side-title span {
+  //画像
+  position: absolute;
+  content: "";
+  background-image: url(./../images/common/blog-side-title.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(50);
+  height: rem(50);
+  top: rem(-6);
+  left: rem(32);
+}
+
+.blog-side-title::before {
+  //左の線
+  position: absolute;
+  content: "";
+  background-color: $accent;
+  width: rem(8);
+  height: rem(50);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}

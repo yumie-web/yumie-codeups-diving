@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.review-card {
+  color: $main-font;
+}
+
+.review-card__img {
+  width: 100%;
+}
+
+.review-card__img img {
+  aspect-ratio: 294 / 218;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.review-card__age {
+  font-size: rem(12);
+  margin-top: rem(16);
+}
+
+.review-card__title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: rem(8);
+}
