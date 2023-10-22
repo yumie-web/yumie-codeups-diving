@@ -27,18 +27,28 @@
   margin-top: rem(40);
 }
 
+.blog-side__accordions {
+  margin-top: rem(24);
+}
+
 .blog-side__accordion {
   color: $accent;
   font-size: rem(24);
 }
 
-.blog-side__accordion p {
+.blog-side__accordion-year {
+  padding-left: rem(24);
+  position: relative;
+}
+
+.blog-side__accordion-month {
   text-indent: rem(24);
   padding-left: rem(24);
   position: relative;
 }
 
-.blog-side__accordion p::before {
+.blog-side__accordion-month::before,
+.blog-side__accordion-year::before {
   position: absolute;
   content: "";
   width: 0;
@@ -49,4 +59,19 @@
   top: 50%;
   transform: translateY(-50%);
   left: rem(24);
+}
+
+.blog-side__accordion-year::before {
+  left: 0;
+  transition: 0.3s;
+}
+
+.blog-side__accordion-year.js-open::before {
+  transform: rotate(45deg);
+  top: 25%;
+  // transform: translateY(-50%);
+}
+
+.blog-side__accordion-lists {
+  display: none;
 }

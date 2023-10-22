@@ -318,17 +318,18 @@
           </div>
           <div class="wp-pagenavi top-wp-pagenavi">
             <!-- <a class="first" href="#">« 先頭</a> -->
-            <a class="wp-pagenavi__previouspostslink" rel="prev" href="#"><</a>
-            <div class="wp-pagenavi__block">
-              <a class="wp-pagenavi__numbers wp-pagenavi__numbers--current" href="#">1</a>
-              <a class="wp-pagenavi__numbers page smaller" href="#">2</a>
-              <a class="wp-pagenavi__numbers page smaller" href="#">3</a>
-              <a class="wp-pagenavi__numbers page larger" href="#">4</a>
-              <a class="wp-pagenavi__numbers page larger wp-pagenavi__pc" href="#">5</a>
-              <a class="wp-pagenavi__numbers page larger wp-pagenavi__pc" href="#">6</a>
-            </div>
-              <a class="wp-pagenavi__nextpostslink" rel="next" href="#">></a>
-              <!-- <a class="last" href="#">最後 »</a> -->
+            <a class="wp-pagenavi__previouspostslink" rel="prev" href="#">
+              << /a>
+                <div class="wp-pagenavi__block">
+                  <a class="wp-pagenavi__numbers wp-pagenavi__numbers--current" href="#">1</a>
+                  <a class="wp-pagenavi__numbers page smaller" href="#">2</a>
+                  <a class="wp-pagenavi__numbers page smaller" href="#">3</a>
+                  <a class="wp-pagenavi__numbers page larger" href="#">4</a>
+                  <a class="wp-pagenavi__numbers page larger wp-pagenavi__pc" href="#">5</a>
+                  <a class="wp-pagenavi__numbers page larger wp-pagenavi__pc" href="#">6</a>
+                </div>
+                <a class="wp-pagenavi__nextpostslink" rel="next" href="#">></a>
+                <!-- <a class="last" href="#">最後 »</a> -->
           </div>
         </div>
         <div class="blog-list__side blog-side">
@@ -413,16 +414,19 @@
               </div>
               <div class="blog-side__contents">
                 <h2 class="blog-side__title blog-side-title"><span></span>アーカイブ</h2>
-                <details class="blog-side__accordion">
-                  <summary>2023</summary>
-                  <p>3月</p>
-                  <p>2月</p>
-                  <p>1月</p>
-                </details>
-                <details class="blog-side__accordion">
-                  <summary>2022</summary>
-                  <p>3月</p>
-                </details>
+                <div class="blog-side__accordions">
+                  <div class="blog-side__accordion">
+                    <div class="blog-side__accordion-year">2023</div>
+                    <ul class="blog-side__accordion-lists">
+                      <li class="blog-side__accordion-month">3月</li>
+                      <li class="blog-side__accordion-month">2月</li>
+                      <li class="blog-side__accordion-month">1月</li>
+                    </ul>
+                  </div>
+                  <div class="blog-side__accordion">
+                    <div class="blog-side__accordion-year">2023</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

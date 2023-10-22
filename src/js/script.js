@@ -183,5 +183,10 @@ jQuery(function ($) {
     return false;
   });
 
+  // 下層ブログ アコーディオン
+  $('.blog-side__accordion-year').on('click', function(){
+    $(this).next().slideToggle(300);
+    $(this).toggleClass("js-open", 300);
+  });
 
 });
