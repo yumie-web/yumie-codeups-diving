@@ -37,3 +37,8 @@
   font-weight: 500;
   font-size: rem(16);
 }
+
+.article-card:hover {
+  cursor: pointer;
+  transform: translateY(-0.3125rem);
+}

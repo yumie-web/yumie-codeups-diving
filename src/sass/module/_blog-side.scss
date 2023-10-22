@@ -1,9 +1,14 @@
 @use "global" as *;
 
 .blog-side {
-  max-width: rem(294);
+  max-width: 100%;
   margin-inline: auto;
-  width: 100%;
+  // width: 100%;
+  width: max(rem(294), 75vw);
+  @include mq(md) {
+    max-width: rem(294);
+    width: 100%;
+  }
 }
 
 .blog-side__contents:nth-child(n + 2) {
@@ -27,6 +32,15 @@
   margin-top: rem(40);
 }
 
+.blog-side__card {
+  transition: 0.3s;
+}
+
+.blog-side__card:hover {
+  cursor: pointer;
+  transform: translateY(-0.3125rem);
+}
+
 .blog-side__accordions {
   margin-top: rem(24);
 }
@@ -45,6 +59,11 @@
   text-indent: rem(24);
   padding-left: rem(24);
   position: relative;
+}
+
+.blog-side__accordion-year:hover,
+.blog-side__accordion-month:hover {
+  cursor: pointer;
 }
 
 .blog-side__accordion-month::before,
@@ -67,9 +86,8 @@
 }
 
 .blog-side__accordion-year.js-open::before {
-  transform: rotate(45deg);
-  top: 25%;
-  // transform: translateY(-50%);
+  transform: rotate(90deg);
+  top: 30%;
 }
 
 .blog-side__accordion-lists {
