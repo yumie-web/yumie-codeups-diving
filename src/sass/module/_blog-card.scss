@@ -64,7 +64,6 @@
 // 下層 ブログ一覧
 .blog-cards--blog-list {
   position: relative;
-  
 }
 
 .blog-card__img--blog-list {
@@ -74,4 +73,8 @@
 .blog-card:hover .blog-card__img--blog-list {
   transform: scale(1.1);
   transform: translateY(0);
+}
+
+.blog-card__title--sub-blog {
+  font-size: rem(16);
 }

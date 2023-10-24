@@ -31,11 +31,13 @@
 .article-card__date {
   font-family: $en-font-family;
   font-size: rem(12);
+  vertical-align: top;
 }
 
 .article-card__title {
   font-weight: 500;
   font-size: rem(16);
+  line-height: 1;
 }
 
 .article-card:hover {

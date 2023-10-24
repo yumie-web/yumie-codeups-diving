@@ -3,10 +3,12 @@
 .blog-list {
 }
 
-.blog-list__inner {
+.blog-list__inner.inner {
+ 
 }
 
 .blog-list__contents {
+  
   @include mq(md) {
     display: flex;
     gap: rem(80);
@@ -14,27 +16,33 @@
 }
 
 .blog-list__bg {
-  z-index: 5;
+  position: relative;
+}
+
+.blog-list__bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(./../images/common/voice-pc-bg-fishs.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: rem(-28);
+  left: calc(50% - min(46vw, rem(320)));
+  width: rem(120);
+  height: rem(55);
+  z-index: 2;
   @include mq(md) {
+    width: rem(300);
+    height: rem(138);
+    top: rem(80);
+    left: calc(50% - min(48.5vw, rem(620)));
     z-index: -1;
   }
 }
 
-.blog-list__bg::before {
-  top: rem(-25);
-  left: calc(50% - min(48.5vw, rem(200)));
-  width: rem(120);
-  height: rem(55);
-  @include mq(md) {
-    width: rem(300);
-    height: rem(138);
-    top: rem(-73);
-    left: calc(50% - min(48.5vw, rem(620)));
-  }
-}
-
 .blog-list__cards {
-  margin-top: rem(52);
+  margin-top: rem(46);
+  padding-left: rem(5);
+  padding-right: rem(5);
   @include mq(md) {
     margin-top: rem(150);
   }
@@ -50,7 +58,7 @@
 }
 
 .blog-list__side {
-  margin-top: rem(80);
+  margin-top: rem(93);
   @include mq(md) {
     margin-top: rem(150);
   }

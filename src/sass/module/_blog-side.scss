@@ -12,27 +12,24 @@
 }
 
 .blog-side__contents:nth-child(n + 2) {
-  margin-top: rem(80);
+  margin-top: rem(87);
 }
 
 .blog-side__popular-articles {
-  margin-top: rem(24);
+  margin-top: rem(30);
 }
 
 .blog-side__review-card {
-  margin-top: rem(24);
+  margin-top: rem(30);
 }
 
 .blog-side__btn {
   text-align: center;
-  margin-top: rem(44);
-}
-
-.blog-side__card:nth-child(n + 2) {
-  margin-top: rem(40);
+  margin-top: rem(42);
 }
 
 .blog-side__card {
+  margin-top: rem(36);
   transition: 0.3s;
 }
 
@@ -51,13 +48,13 @@
 }
 
 .blog-side__accordion-year {
-  padding-left: rem(24);
+  padding-left: rem(31);
   position: relative;
 }
 
 .blog-side__accordion-month {
   text-indent: rem(24);
-  padding-left: rem(24);
+  padding-left: rem(30);
   position: relative;
 }
 
@@ -73,11 +70,15 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 8px 0 8px 15px;
+  border-width: 11px 0px 11px 20px;
   border-color: transparent transparent transparent $accent;
   top: 50%;
   transform: translateY(-50%);
-  left: rem(24);
+  left: rem(26);
+}
+
+.blog-side__accordion-month::before {
+  left: rem(30);
 }
 
 .blog-side__accordion-year::before {
@@ -92,4 +93,10 @@
 
 .blog-side__accordion-lists {
   display: none;
+  margin-top: rem(4);
+  // line-height: 1.8;
+}
+
+.blog-side__accordion:nth-child(n + 2) {
+  margin-top: rem(6);
 }
