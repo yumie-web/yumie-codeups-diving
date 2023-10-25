@@ -25,12 +25,16 @@
 
 .blog-side__btn {
   text-align: center;
-  margin-top: rem(42);
+  margin-top: rem(44);
 }
 
 .blog-side__card {
-  margin-top: rem(36);
+  margin-top: rem(34);
   transition: 0.3s;
+}
+
+.blog-side__card:nth-child(2) {
+  margin-top: rem(36);
 }
 
 .blog-side__card:hover {
@@ -39,7 +43,7 @@
 }
 
 .blog-side__accordions {
-  margin-top: rem(24);
+  margin-top: rem(36);
 }
 
 .blog-side__accordion {

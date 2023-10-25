@@ -159,19 +159,20 @@
 // 下層 ブログ
 .card__title--blog-side {
   text-align: center;
+  margin-top: 0;
 }
 
-.card__img--blog-side {
+.card__img.card__img--blog-side {
   position: relative;
 }
 
-.card__img--blog-side::before {
+.card__img.card__img--blog-side::before {
   content: "";
   display: block;
   padding-top: 63.9455%;
 }
 
-.card__img--blog-side img {
+.card__img.card__img--blog-side img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -181,7 +182,23 @@
   object-fit: cover;
 }
 
-.card__body--blog-side {
+.card__body.card__body--blog-side {
   padding-top: rem(12);
+  @include mq(md) {
+    padding: rem(16) rem(16) rem(24);
+  }
 }
 
+.card__text.card__text--blog-side {
+  font-size: rem(14);
+  padding-top: rem(4);
+  letter-spacing: 0;
+}
+
+.card__low-price.card__low-price--blog-side {
+  font-size: rem(20);
+}
+
+.card__active-price.card__active-price--blog-side {
+  font-size: rem(32);
+}
