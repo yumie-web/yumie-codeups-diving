@@ -5,6 +5,7 @@
   font-family: $en-font-family;
   font-size: rem(14);
   line-height: calc(18 / 14);
+  vertical-align: top;
 }
 
 .blog-content__title {
@@ -17,6 +18,7 @@
   @include mq(md) {
     font-size: rem(32);
     line-height: calc(46 / 32);
+    padding-bottom: rem(1);
   }
 }
 
@@ -51,4 +53,33 @@
 
 .blog-content__text {
   line-height: calc(24 / 16);
+}
+
+.blog-content__list {
+  padding-left: rem(27);
+  position: relative;
+}
+
+.blog-content__list::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/hitode-green.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(18);
+  height: rem(18);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.blog-content__list:nth-child(n + 2) {
+  margin-top: rem(4);
+}
+
+.blog-content__pagenation {
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(86);
+  }
 }

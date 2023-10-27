@@ -187,23 +187,21 @@
               </div>
               <p class="blog-content__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
               <ul class="blog-content__lists">
-                <li>リスト１</li>
-                <li>リスト２</li>
-                <li>リスト３</li>
+                <li class="blog-content__list">リスト１</li>
+                <li class="blog-content__list">リスト２</li>
+                <li class="blog-content__list">リスト３</li>
               </ul>
               <p class="blog-content__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-              <div class="blog-content__pagenation">
-                <div class="wp-pagenavi top-wp-pagenavi">
+                <div class="wp-pagenavi blog-content__pagenation">
                   <!-- <a class="first" href="#">« 先頭</a> -->
-                  <a class="wp-pagenavi__previouspostslink" rel="prev" href="#">
+                  <a class="wp-pagenavi__previouspostslink wp-pagenavi__previouspostslink--blog-detail" rel="prev" href="#">
                     <</a>
-                      <a class="wp-pagenavi__nextpostslink" rel="next" href="#">></a>
+                      <a class="wp-pagenavi__nextpostslink wp-pagenavi__nextpostslink--blog-detail" rel="next" href="#">></a>
                       <!-- <a class="last" href="#">最後 »</a> -->
                 </div>
-              </div>
             </div>
           </div>
-          <div class="blog-list__side blog-side">
+          <div class="blog-list__side blog-list__side--detail blog-side">
             <div class="blog-side__contents">
               <h2 class="blog-side__title blog-side-title"><span></span>人気記事</h2>
               <div class="blog-side__popular-articles articles">
@@ -255,7 +253,7 @@
                     <figure class="card__img card__img--blog-side">
                       <img src="./assets/images/common/campaign1.webp" alt="魚の群れの画像">
                     </figure>
-                    <div class="card__body card__body--blog-side">
+                    <div class="card__body card__body--blog-detail">
                       <div class="card__title card__title--blog-side">ライセンス取得</div>
                       <p class="card__text card__text--blog-side">全部コミコミ(お一人様)</p>
                       <div class="card__price">
@@ -265,7 +263,7 @@
                     </div>
                   </div>
                   <div class="blog-side__card card">
-                    <figure class="card__img card__img--blog-side">
+                    <figure class="card__img card__img--blog-detail">
                       <img src="./assets/images/common/campaign2.webp" alt="魚の群れの画像">
                     </figure>
                     <div class="card__body card__body--blog-side">
@@ -285,7 +283,7 @@
                 </div>
                 <div class="blog-side__contents">
                   <h2 class="blog-side__title blog-side-title"><span></span>アーカイブ</h2>
-                  <div class="blog-side__accordions">
+                  <div class="blog-side__accordions blog-side__accordions--detail">
                     <div class="blog-side__accordion">
                       <div class="blog-side__accordion-year">2023</div>
                       <ul class="blog-side__accordion-lists">
@@ -307,7 +305,7 @@
     </section>
 
 
-    <section class="contact top-contact top-contact--info" id="contact">
+    <section class="contact top-contact-blog-detail" id="contact">
       <div class="contact__inner inner">
         <div class="contact__container">
           <div class="contact__content">
@@ -350,7 +348,7 @@
     </div>
 
   </main>
-  <footer class="footer top-footer--info js-footer">
+  <footer class="footer top-footer--blog-detail js-footer">
     <div class="footer__inner inner">
       <div class="footer__container">
         <div class="footer__main-box">

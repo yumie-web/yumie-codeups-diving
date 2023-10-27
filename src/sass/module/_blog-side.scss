@@ -104,3 +104,10 @@
 .blog-side__accordion:nth-child(n + 2) {
   margin-top: rem(6);
 }
+
+// 下層ブログ詳細
+.blog-side__accordions--detail {
+  @include mq(md) {
+    margin-top: rem(26);
+  }
+}

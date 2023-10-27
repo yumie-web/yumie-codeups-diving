@@ -51,3 +51,17 @@
   display: inline-block;
   margin: 0 rem(32);
 }
+
+
+// 下層ブログ詳細
+.wp-pagenavi__nextpostslink--blog-detail {
+  margin-left: rem(82);
+  @include mq(md) {
+    margin-left: rem(80);
+  }
+}
+
+.wp-pagenavi__nextpostslink--blog-detail,
+.wp-pagenavi__previouspostslink--blog-detail {
+  padding: rem(6) rem(16);
+}

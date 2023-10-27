@@ -7,10 +7,33 @@
   }
 }
 
+.blog-list__main {
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    max-width: 100%;
+  }
+}
+
 
 .blog-list__side {
   margin-top: rem(93);
   @include mq(md) {
     margin-top: 0;
+  }
+}
+
+// 下層ブログ詳細
+.blog-list.blog-lists__contents {
+  @include mq(md) {
+    gap: rem(86);
+  }
+}
+
+.blog-list__side--detail {
+  margin-top: 0;
+  @include mq(md) {
+    margin-top: rem(7);
   }
 }

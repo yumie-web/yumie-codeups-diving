@@ -202,3 +202,12 @@
 .card__active-price.card__active-price--blog-side {
   font-size: rem(32);
 }
+
+// 下層ブログ詳細
+.card__body.card__body--blog-detail {
+  padding-top: rem(12);
+  padding-bottom: rem(27);
+  @include mq(md) {
+    padding: rem(16) rem(16) rem(24);
+  }
+}
