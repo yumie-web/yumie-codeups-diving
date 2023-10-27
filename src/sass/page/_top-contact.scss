@@ -29,3 +29,27 @@
     margin-top: rem(157);
   }
 }
+
+// 下層ブログ
+.top-contact--sub-blog {
+  margin-top: rem(105);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
+
+// 下層ブログ詳細
+.top-contact--blog-detail {
+  margin-top: rem(105);
+  @include mq(md) {
+    margin-top: rem(148);
+  }
+}
+
+//下層お客様の声
+.top-contact--voice {
+  margin-top: rem(106);
+  @include mq(md) {
+    margin-top: rem(147);
+  }
+}

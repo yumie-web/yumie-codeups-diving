@@ -31,7 +31,7 @@
 
 .blog-content__box > .blog-content__img,
 .blog-content__box > .blog-content__text,
-.blog-content__box > .blog-content__lists,{
+.blog-content__box > .blog-content__lists {
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);

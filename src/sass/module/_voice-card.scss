@@ -128,3 +128,27 @@
     margin-top: rem(40);
   }
 }
+
+// 下層お客様の声
+.voice-card.voice-cards__card--sub-voice {
+  padding-top: rem(15);
+  padding-bottom: rem(20);
+  @include mq(md) {
+    padding-bottom: rem(26);
+    padding-top: rem(23);
+  }
+}
+
+.voice-card__title--sub-voice {
+  margin-top: rem(4);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+
+.voice-card__img--sub-voice {
+  width: 48%;
+  @include mq(md) {
+    width: 38%;
+  }
+}
