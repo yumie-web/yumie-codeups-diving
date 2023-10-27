@@ -53,3 +53,11 @@
     margin-top: rem(147);
   }
 }
+
+//下層FAQ
+.top-contact--sub-faq {
+  margin-top: rem(106);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
