@@ -189,4 +189,9 @@ jQuery(function ($) {
     $(this).toggleClass("js-open", 300);
   });
 
+  // 下層FAQ
+  $('.sub-faq__q').on('click', function(){
+    $(this).next().slideToggle(); //.qa-box__qの次のclassをslideToggleで開く
+    $(this).children('.sub-faq__icon2').toggleClass('js-open')  });
+
 });

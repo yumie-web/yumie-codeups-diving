@@ -16,23 +16,24 @@
   padding: rem(16);
   position: relative;
   @include mq(md) {
-    padding: rem(26) rem(40);
+    padding: rem(25) rem(40);
     font-size: rem(20);
     line-height: calc(29 / 20);
   }
 }
 
-.sub-faq__q span {
+.sub-faq__icon1,
+.sub-faq__icon2 {
   position: absolute;
   background-color: $white;
   width: 100%;
 }
 
-.sub-faq__q span:nth-child(1) { //横
-  width: rem(26);
+.sub-faq__icon1 { //横
+  width: rem(28);
   height: rem(1);
   top: 50%;
-  right: 0;
+  right: rem(2);
   transform: translateX(-50%);
   @include mq(md) {
     width: rem(32);
@@ -40,11 +41,12 @@
   }
 }
 
-.sub-faq__q span:nth-child(2) { //縦
+.sub-faq__icon2 { //縦
   width: rem(1);
-  height: rem(26);
+  height: rem(28);
   top: 27%;
-  right: rem(26);
+  right: rem(29);
+  transition: 0.3s;
   @include mq(md) {
     height: rem(32);
     right: rem(57);
@@ -52,10 +54,16 @@
   }
 }
 
+.sub-faq__icon2.js-open {
+  transform: rotate(90deg);
+}
+
 .sub-faq__a {
+  display: none;
   color: $main-font;
-  padding: rem(24) rem(16);
+  padding: rem(23) rem(16);
   border: 1px solid $accent;
+  line-height: calc(23 / 16);
   @include mq(md) {
     padding: rem(40);
     margin-top: rem(16);

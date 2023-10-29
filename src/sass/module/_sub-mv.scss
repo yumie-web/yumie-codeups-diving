@@ -33,3 +33,8 @@
     line-height: calc(100 / 80);
   }
 }
+
+// 下層FAQ
+.sub-mv__title.sub-mv__title--faq p {
+  text-transform: uppercase;
+}
