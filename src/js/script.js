@@ -184,10 +184,10 @@ jQuery(function ($) {
   });
 
   // 下層ブログ アコーディオン
-  $('.blog-side__accordion-year').on('click', function(){
-    $(this).next().slideToggle(300);
-    $(this).toggleClass("js-open", 300);
-  });
+  // $('.blog-side__accordion-year').on('click', function(){
+  //   $(this).next().slideToggle(300);
+  //   $(this).toggleClass("js-open", 300);
+  // });
 
   // 下層FAQ
   $('.sub-faq__q').on('click', function(){

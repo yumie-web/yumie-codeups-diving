@@ -54,6 +54,12 @@
 .blog-side__accordion-year {
   padding-left: rem(31);
   position: relative;
+  display: block; //chrome safari以外は非表示
+}
+
+// chrome safari
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .blog-side__accordion-month {
@@ -79,6 +85,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: rem(26);
+  transition: 0.3s;
 }
 
 .blog-side__accordion-month::before {
@@ -87,18 +94,30 @@
 
 .blog-side__accordion-year::before {
   left: 0;
-  transition: 0.3s;
 }
 
-.blog-side__accordion-year.js-open::before {
+.blog-side__accordion[open] .blog-side__accordion-year::before {
   transform: rotate(90deg);
   top: 30%;
 }
 
+.blog-side__accordion[open] .blog-side__accordion-lists {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn { //月をふわっと表示させる
+  0% {
+    opacity: 0; /* 透明 */
+    transform: translateY(-10px); /* 上から表示 */
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .blog-side__accordion-lists {
-  display: none;
   margin-top: rem(4);
-  // line-height: 1.8;
 }
 
 .blog-side__accordion:nth-child(n + 2) {
