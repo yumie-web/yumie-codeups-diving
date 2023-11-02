@@ -1,0 +1,60 @@
+@use 'global' as *;
+
+.price-list {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+
+  @include mq(md) {
+   
+  }
+}
+
+.price-list__head {
+  background-color: $accent;
+  color: $white;
+  padding: rem(8) 0;
+  width: 100%;
+
+  @include mq(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+.price-lis__icon {
+  display: flex;
+  flex-direction: row;
+  gap: rem(8);
+  width: 100%;
+}
+
+.price-lis__icon img {
+  width: rem(24);
+}
+
+.price-list__title {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+}
+
+.price-list__menu {
+  // display: grid;
+  // grid-template-columns: rem(240) rem(104);
+  // grid-auto-rows: rem(60);
+  border: 1px solid $accent;
+}
+
+.price-list__name {
+  
+  // align-self: center;
+  // width: rem(240);
+  // padding: rem(6) 0;
+  text-align: center;
+  // border-right: 1px solid $accent;
+}
+
+.price-list__price {
+  // align-self: center;
+  // width: calc(rem(106) - rem(2));//ボーダー考慮
+  text-align: center;
+}
