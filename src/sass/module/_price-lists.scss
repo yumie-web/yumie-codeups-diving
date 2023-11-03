@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.price-lists {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(80);
+  }
+}
+
+.price-lists__list {
+  max-width: rem(600);
+  margin-inline: auto;
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(700);
+  }
+}

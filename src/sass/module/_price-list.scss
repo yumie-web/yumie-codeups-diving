@@ -1,16 +1,22 @@
 @use 'global' as *;
 
 .price-list {
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @include mq(md) {
-   
+    flex-direction: row;
+    max-width: rem(700);
+    width: 100%;
   }
 }
 
 .price-list__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: rem(8);
   background-color: $accent;
   color: $white;
   padding: rem(8) 0;
@@ -18,18 +24,20 @@
 
   @include mq(md) {
     flex-direction: column-reverse;
+    width: 28.5%;
+    padding: 0;
   }
 }
 
-.price-lis__icon {
-  display: flex;
-  flex-direction: row;
-  gap: rem(8);
-  width: 100%;
+.price-list__icon {
+  
 }
 
 .price-lis__icon img {
   width: rem(24);
+  @include mq(md) {
+    width: rem(64);
+  }
 }
 
 .price-list__title {
@@ -37,24 +45,31 @@
   line-height: calc(24 / 16);
 }
 
+.price-list__menu-box {
+  @include mq(md) {
+    width: 71.5%;
+    border-top: 1px solid $accent;
+  }
+}
+
 .price-list__menu {
-  // display: grid;
-  // grid-template-columns: rem(240) rem(104);
-  // grid-auto-rows: rem(60);
-  border: 1px solid $accent;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $accent;
+  border-right: 1px solid $accent;
+  border-left: 1px solid $accent;
 }
 
 .price-list__name {
-  
-  // align-self: center;
-  // width: rem(240);
-  // padding: rem(6) 0;
+  padding: rem(6) rem(8);
   text-align: center;
-  // border-right: 1px solid $accent;
+  width: 69.5%;
 }
 
 .price-list__price {
-  // align-self: center;
-  // width: calc(rem(106) - rem(2));//ボーダー考慮
+  width: 30.5%;
   text-align: center;
+  border-left: 1px solid $accent;
+  padding: rem(18) rem(6);
+  
 }
