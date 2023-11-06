@@ -1,0 +1,186 @@
+@use 'global' as *;
+
+.form {
+  color: $main-font;
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  padding-top: rem(24);
+  padding-bottom: rem(24);
+  border-bottom: 1px dotted $accent;
+  @include mq(md) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+// タイトルとラジオボタンの間(PC)
+// タイトルとセレクトボックスの間(PC)
+.form__box--radio,
+.form__box--select {
+  @include mq(md) {
+    justify-content: flex-start;
+    gap: rem(36);
+  }
+}
+
+.form__box:first-child {
+  padding-top: 0;
+}
+
+.form__head {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  @include mq(md) {
+    width: rem(181);
+    gap: rem(4);
+  }
+}
+
+.form__label {
+  font-weight: 700;
+  line-height: calc(23 / 16);
+}
+
+.form__label-tag {
+  display: inline-block;
+  padding: rem(4.5) rem(10);
+  font-size: rem(12);
+  font-weight: 400;
+  letter-spacing: 0.48em;
+  line-height: 1;
+  background-color: #C94800;
+  color: #fff;
+  text-indent: rem(6);
+}
+
+.form__input { //入力欄 装飾
+  padding: rem(7.5) rem(15);
+  border: 1px solid $accent;
+  width: 100%;
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+
+.form__input::placeholder {
+  color: #DDF0F1;
+  line-height: calc(23 / 16);
+}
+
+.form__radios {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+
+.form__radio-btn:checked + .form__radio-title::after{ 
+  opacity: 1;
+}
+
+.form__radio-title {
+  padding-left: rem(24);
+  position: relative;
+}
+
+.form__radio-title::after,
+.form__radio-title::before {
+  position: absolute;
+  content: "";
+  width: rem(14);
+  height: rem(14);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__radio-title::before { //チェックボックス
+  border: 1px solid $accent;
+  background-color: #fff;
+  left: 0;
+}
+
+.form__radio-title::after { //チェックマーク
+  background-image: url(./../images/common/check.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(10);
+  height: rem(10);
+  left: rem(2);
+  top: 53%;
+  opacity: 0;
+}
+
+.form__select-box {
+  position: relative;
+}
+
+.form__select-box::after { //セレクトボックスの矢印
+  position: absolute;
+  content: "";
+  background-image: url(./../images/common/select-arrow.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(12);
+  height: rem(12);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(8);
+}
+
+.form__select {
+  border: 1px solid $accent;
+  font-size: rem(12);
+  line-height: calc(17 / 12);
+  padding: rem(6) rem(8);
+  width: 100%;
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+
+.form__textarea {
+  border: 1px solid $accent;
+  height: rem(200);
+  width: 100%;
+  resize: none;
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+
+.form__check-container {
+  margin-top: rem(40);
+  padding: 0 rem(30);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(80);
+    padding: 0 rem(100);
+  }
+}
+
+.form__checkbox {
+
+}
+
+.form__checkbox-text {
+  display: inline-block;
+  font-size: rem(14);
+  line-height: calc(22 / 14);
+}
+
+.form__btn {
+  text-align: center;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+

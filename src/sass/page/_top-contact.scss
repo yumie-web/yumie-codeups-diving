@@ -61,3 +61,11 @@
     margin-top: rem(152);
   }
 }
+
+//下層料金一覧
+.top-contact--sub-price {
+  margin-top: rem(106);
+  @include mq(md) {
+    margin-top: rem(154);
+  }
+}

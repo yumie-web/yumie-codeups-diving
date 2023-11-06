@@ -155,160 +155,98 @@
     <!-- 下層 共通 -->
     <div class="sub-mv">
       <picture class="sub-mv__img">
-        <source srcset="./assets/images/common/sub-price-mv-pc.webp" media="(min-width: 768px)" type="image/webp">
-        <img src="./assets/images/common/sub-price-mv-sp.webp" alt="魚のメイン画像">
+        <source srcset="./assets/images/common/sub-contact-mv-pc.webp" media="(min-width: 768px)" type="image/webp">
+        <img src="./assets/images/common/sub-contact-mv-sp.webp" alt="魚のメイン画像">
       </picture>
       <div class="sub-mv__title">
-        <p>price</p>
+        <p>contact</p>
       </div>
     </div>
 
     <!-- パンくずリスト -->
     <div class="sub-breadcrumb">
       <div class="sub-breadcrumb__inner inner">
-        <p>TOP > 料金一覧</p>
+        <p>TOP > お問い合わせ</p>
       </div>
     </div>
 
-    <section class="sub-price top-sub-price">
-      <div class="sub-price__inner inner">
-        <div class="sub-price__bg sub-bg"></div>
-        <div class="sub-price__lists price-lists">
-          <div class="price-lists__list price-list">
-            <div class="price-list__head">
-              <div class="price-lis__icon">
-                <img src="./assets/images/common/sub-info-tag1.webp" alt="">
-              </div>
-              <h3 class="price-list__title">ライセンス講習</h3>
+    <section class="contact-form">
+      <div class="contact-form__inner inner">
+        <div class="contact-form__bg sub-bg"></div>
+        <form class="contact-form__form form" action="">
+          <div class="form__box">
+            <div class="form__head">
+              <label class="form__label" for="name">お名前</label>
+              <span class="form__label-tag">必須</span>
             </div>
-            <dl class="price-list__menu-box">
-              <div class="price-list__menu">
-                <dt class="price-list__name">オープンウォーター<br class="u-mobile">ダイバーコース</dt>
-                <dd class="price-list__price">¥50,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">アドバンスド<br class="u-mobile">オープンウォーターコース</dt>
-                <dd class="price-list__price">¥60,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">レスキュー＋EFRコース</dt>
-                <dd class="price-list__price">¥70,000</dd>
-              </div>
-            </dl>
+            <input class="form__input" id="name" type="text" placeholder="沖縄　太郎">
           </div>
-          <div class="price-lists__list price-list">
-            <div class="price-list__head">
-              <div class="price-lis__icon">
-                <img src="./assets/images/common/sub-info-tag1.webp" alt="">
-              </div>
-              <h3 class="price-list__title">体験ダイビング</h3>
+          <div class="form__box">
+            <div class="form__head">
+              <label class="form__label" for="adress">メールアドレス</label>
+              <span class="form__label-tag">必須</span>
             </div>
-            <dl class="price-list__menu-box">
-              <div class="price-list__menu">
-                <dt class="price-list__name">ビーチ体験ダイビング<br class="u-mobile">(半日)</dt>
-                <dd class="price-list__price">¥7,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ビーチ体験ダイビング<br class="u-mobile">(1日)</dt>
-                <dd class="price-list__price">¥14,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ボート体験ダイビング<br class="u-mobile">(半日)</dt>
-                <dd class="price-list__price">¥10,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ボート体験ダイビング<br class="u-mobile">(1日)</dt>
-                <dd class="price-list__price">¥18,000</dd>
-              </div>
-            </dl>
+            <input class="form__input" id="adress" type="email" placeholder="aaa000@ggmail.com">
           </div>
-          <div class="price-lists__list price-list">
-            <div class="price-list__head">
-              <div class="price-lis__icon">
-                <img src="./assets/images/common/sub-info-tag1.webp" alt="">
-              </div>
-              <h3 class="price-list__title">ファンダイビング</h3>
+          <div class="form__box">
+            <div class="form__head">
+              <label class="form__label" for="tel-nunber">電話番号</label>
+              <span class="form__label-tag">必須</span>
             </div>
-            <dl class="price-list__menu-box">
-              <div class="price-list__menu">
-                <dt class="price-list__name">ビーチダイビング<br class="u-mobile">(2ダイブ)</dt>
-                <dd class="price-list__price">¥14,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ボートダイビング<br class="u-mobile">(2ダイブ)</dt>
-                <dd class="price-list__price">¥18,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">スペシャルダイビング<br class="u-mobile">(2ダイブ)</dt>
-                <dd class="price-list__price">¥24,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ナイトダイビング<br class="u-mobile">(1ダイブ)</dt>
-                <dd class="price-list__price">¥10,000</dd>
-              </div>
-            </dl>
+            <input class="form__input" id="tel-nunber" type="tel" placeholder="000-0000-0000">
           </div>
-          <div class="price-lists__list price-list">
-            <div class="price-list__head">
-              <div class="price-lis__icon">
-                <img src="./assets/images/common/sub-info-tag1.webp" alt="">
-              </div>
-              <h3 class="price-list__title">スペシャルダイビング</h3>
+          <div class="form__box form__box--radio">
+            <div class="form__head">
+              <div class="form__label">お問合せ項目</div>
+              <span class="form__label-tag">必須</span>
             </div>
-            <dl class="price-list__menu-box">
-              <div class="price-list__menu">
-                <dt class="price-list__name">貸切ダイビング<br class="u-mobile">(2ダイブ)</dt>
-                <dd class="price-list__price">¥24,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">1日ダイビング<br class="u-mobile">(3ダイブ)</dt>
-                <dd class="price-list__price">¥32,000</dd>
-              </div>
-              <div class="price-list__menu">
-                <dt class="price-list__name">ナイトダイビング<br class="u-mobile">(2ダイブ)</dt>
-                <dd class="price-list__price">¥14,000</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact top-contact--sub-price" id="contact">
-      <div class="contact__inner inner">
-        <div class="contact__container">
-          <div class="contact__content">
-            <div class="contact__logo">
-              <img src="./assets/images/common/contact-logo-title.webp" alt="codeupsのロゴ">
-            </div>
-            <div class="contact__access">
-              <div class="contact__address">
-                <p>沖縄県那覇市1-1</p>
-                <p>TEL:0120-000-0000</p>
-                <p>営業時間:8:30-19:00</p>
-                <p>定休日:毎週火曜日</p>
-              </div>
-              <div class="contact__map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6566078781257!2d139.80812547425415!3d35.71006702839194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1692584334786!5m2!1sja!2sjp"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+            <div class="form__radios">
+              <label class="form__radio">
+                <input class="form__radio-btn" id="" name="diving" type="radio">
+                <span class="form__radio-title">ダイビング講習について</span>
+              </label>
+              <label class="form__radio">
+                <input class="form__radio-btn" id="" name="diving" type="radio">
+                <span class="form__radio-title">ファンデイビングについて</span>
+              </label>
+              <label class="form__radio">
+                <input class="form__radio-btn" id="" name="diving" type="radio">
+                <span class="form__radio-title">体験ダイビングについて</span>
+              </label>
             </div>
           </div>
-          <div class="contact__reserve">
-            <div class="section-title">
-              <p class="section-title__main section-title__main--contact">Contact</p>
-              <h2 class="section-title__sub section-title__sub--contact">お問い合わせ</h2>
+          <div class="form__box form__box--select">
+            <div class="form__head">
+              <label class="form__label" for="tel-nunber">キャンペーン</label>
             </div>
-            <p class="contact__text">ご予約・お問い合わせはコチラ</p>
-            <div class="contact__btn">
-              <a class="common-btn" href="#">
-                <span class="common-btn__text">Contact us<span class="common-btn__arrow"></span></span>
-              </a>
+            <div class="form__select-box">
+              <select class="form__select" name="" id="">
+                <option value="">キャンペーン内容を選択</option>
+                <option value="">キャンペーン内容を選択1</option>
+                <option value="">キャンペーン内容を選択2</option>
+                <option value="">キャンペーン内容を選択3</option>
+              </select>
             </div>
           </div>
-        </div>
+          <div class="form__box">
+            <div class="form__head">
+              <label class="form__label" for="textarea">お問合せ内容</label>
+              <span class="form__label-tag">必須</span>
+            </div>
+            <textarea class="form__textarea" id="textarea"></textarea>
+          </div>
+          <div class="form__check-container">
+            <label for="check">
+              <input class="form__checkbox" type="checkbox" id="check">
+              <span class="form__checkbox-text">個人情報の取り扱いについて同意のうえ送信します。</span>
+            </label>
+          </div>
+          <div class="form__btn">
+            <a class="common-btn" href="#">
+              <span class="common-btn__text">Send<span class="common-btn__arrow"></span></span>
+            </a>
+          </div>
+        </form>
       </div>
     </section>
 

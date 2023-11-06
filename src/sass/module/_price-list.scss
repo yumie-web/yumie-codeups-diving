@@ -46,6 +46,7 @@
 }
 
 .price-list__menu-box {
+  // border: 1px solid $accent;
   @include mq(md) {
     width: 71.5%;
     border-top: 1px solid $accent;
@@ -64,12 +65,22 @@
   padding: rem(6) rem(8);
   text-align: center;
   width: 69.5%;
+  @include mq(md) {
+    text-align: left;
+    padding: rem(6) rem(14);
+    width: 67.6%;
+
+  }
 }
 
 .price-list__price {
   width: 30.5%;
   text-align: center;
   border-left: 1px solid $accent;
-  padding: rem(18) rem(6);
+  padding: rem(17) rem(15);
+  text-align-last: right;
+  @include mq(md) {
+    width: 32.4%;
+  }
   
 }
