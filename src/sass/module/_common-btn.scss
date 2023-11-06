@@ -90,5 +90,12 @@
 
 // 下層コンタクトフォーム sendボタン 余白調整
 .common-btn.common-btn--contact-form {
-  padding: rem(15) rem(107) rem(15) rem(53);
+  padding: rem(16) rem(106) rem(15) rem(55);
+}
+
+.common-btn__arrow.common-btn__arrow--sub-contact::before {
+  right: rem(59);
+}
+.common-btn__arrow.common-btn__arrow--sub-contact::after {
+  right: rem(63);
 }
