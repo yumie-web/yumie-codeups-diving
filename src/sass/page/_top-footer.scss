@@ -15,8 +15,17 @@
   }
 }
 
+// 料金一覧
 .top-footer--price {
   margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(160);
+  }
+}
+
+// お問い合わせ
+.top-footer--sub-contact {
+  margin-top: rem(148);
   @include mq(md) {
     margin-top: rem(160);
   }

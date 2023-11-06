@@ -87,3 +87,8 @@
 .common-btn:hover .common-btn__arrow::after {
   background-color: #408F95;
 }
+
+// 下層コンタクトフォーム sendボタン 余白調整
+.common-btn.common-btn--contact-form {
+  padding: rem(15) rem(107) rem(15) rem(53);
+}
