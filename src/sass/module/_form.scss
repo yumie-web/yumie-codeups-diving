@@ -15,7 +15,13 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
   }
+}
+
+.form__box:first-child {
+  padding-top: 0;
 }
 
 // タイトルとラジオボタンの間(PC)
@@ -23,7 +29,7 @@
 .form__box--radio,
 .form__box--select {
   @include mq(md) {
-    justify-content: flex-start;
+    // justify-content: flex-start;
     gap: rem(36);
   }
 }
@@ -31,10 +37,9 @@
 // タイトルとラジオボタンの間(sp)
 .form__box.form__box--radio {
   gap: rem(13);
-}
-
-.form__box:first-child {
-  padding-top: 0;
+  @include mq(md) {
+    gap: rem(36);
+  }
 }
 
 .form__head {
@@ -43,7 +48,7 @@
   gap: rem(8);
   @include mq(md) {
     width: rem(181);
-    gap: rem(4);
+    gap: rem(7);
   }
 }
 
@@ -70,6 +75,7 @@
   width: 100%;
   @include mq(md) {
     width: rem(480);
+    padding: rem(7) rem(15);
   }
 }
 
@@ -84,6 +90,7 @@
   gap: rem(3);
   @include mq(md) {
     width: rem(480);
+    gap: rem(1);
   }
 }
 
@@ -94,6 +101,9 @@
 .form__radio-title {
   padding-left: rem(24);
   position: relative;
+  @include mq(md) {
+    vertical-align: middle;
+  }
 }
 
 .form__radio-title::after,
@@ -148,6 +158,8 @@
   width: 100%;
   @include mq(md) {
     width: rem(480);
+    padding: rem(8) rem(8) rem(4);
+    line-height: 1;
   }
 }
 
