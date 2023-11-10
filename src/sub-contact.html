@@ -173,7 +173,8 @@
     <section class="contact-form top-contact-form">
       <div class="contact-form__inner inner">
         <div class="contact-form__bg sub-bg"></div>
-        <form class="contact-form__form form" action="">
+        <form class="contact-form__form form" id="contactForm" action="">
+          <p class="form__error">※必須項目が入力されていません。入力してください。</p>
           <div class="form__box">
             <div class="form__head">
               <label class="form__label" for="name">お名前</label>
@@ -242,7 +243,7 @@
             </label>
           </div>
           <div class="form__btn">
-            <a class="common-btn common-btn--contact-form" href="#">
+            <a id="formSubmit" class="common-btn common-btn--contact-form" href="#">
               <span class="common-btn__text">Send<span class="common-btn__arrow common-btn__arrow--sub-contact"></span></span>
             </a>
           </div>

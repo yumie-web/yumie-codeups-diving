@@ -239,3 +239,25 @@
   }
 }
 
+// 未入力の時の処理↓
+
+.form__error { // 未入力の時の装飾
+  color: #C94800;
+  font-size: rem(14);
+  text-align: center;
+  display: none;
+}
+
+.form__error.js-error {// 未入力検知の際に表示
+  display: block;
+}
+
+.form__input.error {// 未入力の時赤にする
+  border: 1px solid #C94800;
+  background: rgba(201, 72, 0, 0.20);
+}
+
+.form__input.error::placeholder {// 未入力の時白にする
+  color: #fff;
+}
+
