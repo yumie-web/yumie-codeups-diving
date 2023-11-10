@@ -158,8 +158,10 @@
   width: 100%;
   @include mq(md) {
     width: rem(480);
-    padding: rem(8) rem(8) rem(4);
-    line-height: 1;
+    // padding: rem(5) rem(8) rem(5);
+    margin-top: rem(-5);
+    line-height: 1.2;
+    padding: rem(9) rem(8) rem(3);
   }
 }
 
@@ -178,8 +180,9 @@
   padding: 0 rem(30);
   text-align: center;
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(77);
     padding: 0 rem(100);
+    text-indent: -3px;
   }
 }
 
@@ -193,7 +196,9 @@
   line-height: calc(22 / 14);
   position: relative;
   padding-left: rem(30);
-  text-align-last: left;
+  @include mq(md) {
+    padding-left: rem(42);
+  }
 }
 
 .form__checkbox-text::before,
