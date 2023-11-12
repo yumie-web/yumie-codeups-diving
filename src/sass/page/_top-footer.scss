@@ -30,3 +30,11 @@
     margin-top: rem(164);
   }
 }
+
+// サンクスページ
+.top-footer--thanks {
+  margin-top: rem(144);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
