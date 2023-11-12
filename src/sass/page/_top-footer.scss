@@ -38,3 +38,11 @@
     margin-top: rem(120);
   }
 }
+
+// サイトマップ
+.top-footer--site-map {
+  margin-top: rem(100);
+  @include mq(md) {
+    margin-top: rem(160);
+  }
+}

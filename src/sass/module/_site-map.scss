@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.site-map__nav {
+  max-width: rem(600);
+  margin-inline: auto;
+  width: 100%;
+  @include mq(md) {
+    max-width: 100%;
+  }
+}
+
+.site-map__bg.sub-bg::before {
+  top: rem(-11);
+  left: calc(50% - min(46vw, 37.5rem));
+}
