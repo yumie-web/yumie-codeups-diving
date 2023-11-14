@@ -8,3 +8,10 @@
     width: 100%;
   }
 }
+
+.contact-form__bg.sub-bg::before {
+  left: calc(50% - min(46vw, 20.5rem));
+  @include mq(md) {
+    left: calc(50% - min(46vw, 30.5rem));
+  }
+}
