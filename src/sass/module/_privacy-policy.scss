@@ -1,0 +1,56 @@
+@use 'global' as *;
+
+.privacy-policy__bg.sub-bg::before {
+  left: calc(50% - min(46vw, 32rem));
+}
+
+.privacy-policy__container {
+  color: $main-font;
+  max-width: rem(600);
+  margin-inline: auto;
+  width: 100%;
+  line-height: calc(32 / 16);
+  // margin-top: rem(40);
+  @include mq(md) {
+    max-width: rem(800);
+  }
+}
+
+.privacy-policy__title {
+  font-size: rem(24);
+  line-height: calc(35 / 24);
+  @include mq(md) {
+    font-size: rem(32);
+    text-align: left;
+    font-weight: 500;
+    line-height: calc(46 / 32);
+  }
+}
+
+.privacy-policy__text:first-of-type {
+  margin-top: rem(40);
+}
+
+.privacy-policy__text:nth-of-type(2),
+.privacy-policy__text:nth-of-type(3),
+.privacy-policy__text:nth-of-type(4),
+.privacy-policy__text:nth-of-type(5) {
+  margin-top: rem(32);
+}
+
+.privacy-policy__lists {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.privacy-policy__list { // 二行目以降、段落を落とす
+  text-indent: -1em;
+  padding-left: 1.5em;
+}
+
+.privacy-policy__lists:first-of-type {
+  margin-top: rem(32);
+}
+
+
+

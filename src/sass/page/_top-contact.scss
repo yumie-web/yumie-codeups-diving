@@ -77,3 +77,11 @@
     margin-top: rem(138);
   }
 }
+
+//プライバシーポリシー
+.top-contact--privacy-policy {
+  margin-top: rem(104);
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}
