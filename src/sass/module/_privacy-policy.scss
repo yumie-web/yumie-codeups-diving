@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .privacy-policy__bg.sub-bg::before {
-  left: calc(50% - min(46vw, 32rem));
+  left: calc(50% - min(46vw, 38.5rem));
 }
 
 .privacy-policy__container {
