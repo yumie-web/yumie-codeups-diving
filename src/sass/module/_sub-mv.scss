@@ -2,6 +2,7 @@
 
 .sub-mv {
   position: relative;
+  width: 100%;
 }
 
 .sub-mv__img img {
@@ -37,4 +38,9 @@
 // 下層FAQ
 .sub-mv__title.sub-mv__title--faq p {
   text-transform: uppercase;
+}
+
+//利用規約
+.sub-mv__title.sub-mv__title--terms-of-service p {
+  text-transform: none;
 }
