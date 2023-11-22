@@ -9,3 +9,11 @@
   line-height: calc(20 / 14);
   letter-spacing: 0.05em;
 }
+
+//404ページheader分の高さ
+.sub-breadcrumb--404 {
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(90);
+  }
+}
