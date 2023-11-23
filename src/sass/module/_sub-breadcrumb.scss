@@ -11,7 +11,8 @@
 }
 
 //404ページheader分の高さ
-.sub-breadcrumb--404 {
+.sub-breadcrumb--error {
+  color: $white;
   padding-top: rem(80);
   @include mq(md) {
     padding-top: rem(90);
