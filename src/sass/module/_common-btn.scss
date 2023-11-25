@@ -99,3 +99,23 @@
 .common-btn__arrow.common-btn__arrow--sub-contact::after {
   right: rem(63);
 }
+
+//404
+.common-btn.common-btn--error {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  color: $accent;
+  padding: rem(16) rem(90) rem(16) rem(40);
+}
+
+.common-btn.common-btn--error::before {
+  border: 1px #fff solid;
+}
+
+.common-btn__arrow.common-btn__arrow--error::before {
+  background-color: $accent;
+}
+
+.common-btn__arrow.common-btn__arrow--error::after {
+  background-color: $accent;
+}

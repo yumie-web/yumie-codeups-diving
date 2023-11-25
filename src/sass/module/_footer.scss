@@ -10,6 +10,14 @@
   }
 }
 
+//footer 404.html
+.footer.footer--error {
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(83);
+  }
+}
+
 .footer__container {
   max-width: rem(600);
   width: 100%;

@@ -4,10 +4,10 @@
   position: relative;
   text-align: center;
   color: $white;
-  padding: rem(60) 0 rem(27);
+  padding: rem(44) 0 rem(27);
   z-index: 1;
   @include mq(md) {
-    padding: rem(119) 0 rem(148);
+    padding: rem(110) 0 rem(148);
   }
 }
 
@@ -17,16 +17,24 @@
   background-image: url(./../images/common/404.webp);
   background-repeat: no-repeat;
   background-size: contain;
-  width: rem(328);
-  height: rem(293);
+  width: rem(345);
+  height: rem(380);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include mq(md) {
+    width: rem(700);
+    height: rem(704);
+    top: rem(-32);
+    left: 0;
+    transform: none;
+  }
 }
 
 .error__title {
   font-size: rem(80);
   line-height: calc(96 / 80);
+  // line-height: 1;
   font-family: $mv-font;
   font-weight: 400;
   letter-spacing: 0.5em;
@@ -38,8 +46,15 @@
 
 .error__text {
   font-family: $mv-font;
+  margin-top: rem(-4);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 
 .error__btn {
-
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
