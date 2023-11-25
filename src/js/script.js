@@ -195,39 +195,6 @@ jQuery(function ($) {
     $(this).children(".sub-faq__icon2").toggleClass("js-open");
   });
 
-  // お問い合わせフォーム エラー表示
-  $(document).ready(function () {
-    $("#submitButton").click(function (e) {
-      // デフォルトのイベント（aタグのクリック）をキャンセル
-      e.preventDefault();
-
-      // 名前とメールアドレスの値を取得
-      var name = $("#name");
-      var email = $("#email");
-
-      // 必須項目が空であればアラートを表示
-      if (name.val() === "") {
-        $(".form__error").addClass("js-error");
-        $(".form__input").addClass("error");    // エラー時にクラスを追加
-      } else {
-        $(".form__input").removeClass("error"); // エラーが解消されたらクラスを削除
-        $(".form__error").removeClass("js-error");
-      }
-
-      if (email.val() === "") {
-        $(".form__error").addClass("js-error");
-        $(".form__input").addClass("error");
-      } else {
-        $(".form__input").addClass("error");
-        $(".form__error").removeClass("js-error");
-      }
-
-      // フォーム送信
-      if (name.val() !== "" && email.val() !== "") {
-        $("#contactForm")[0].submit();
-      }
-    });
-  });
 });
 
-$(".form__error").addClass("js-error");
+
