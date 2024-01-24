@@ -47,7 +47,7 @@
     position: absolute;
     content: "";
     display: inline-block;
-    background-image: url(./../images/common/sub-info-tag1.webp);
+    background-image: url(./../images/common/sub-info-tag.webp);
     background-repeat: no-repeat;
     background-size: contain;
     top: rem(13);
@@ -57,21 +57,26 @@
   }
 }
 
-.sub-info__tag-item:nth-child(2) a::before {
-  @include mq(md) {
-    background-image: url(./../images/common/sub-info-tag2.webp);
-  }
-}
+// .sub-info__tag-item:nth-child(2) a::before {
+//   @include mq(md) {
+//     background-image: url(./../images/common/sub-info-tag2.webp);
+//   }
+// }
 
-.sub-info__tag-item:nth-child(3) a::before {
-  @include mq(md) {
-    background-image: url(./../images/common/sub-info-tag3.webp);
-  }
-}
+// .sub-info__tag-item:nth-child(3) a::before {
+//   @include mq(md) {
+//     background-image: url(./../images/common/sub-info-tag3.webp);
+//   }
+// }
 
+// タブクリックした時
 .sub-info__tag-item.js-active a {
   background-color: $accent;
   color: $white;
+}
+
+.sub-info__tag-item.js-active a::before {
+  background-image: url(./../images/common/sub-info-tag-active.webp);
 }
 
 // カード js切り替え

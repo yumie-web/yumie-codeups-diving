@@ -39,6 +39,8 @@
 }
 
 .blog-card__contents {
+  display: flex;
+  flex-direction: column;
   margin-top: rem(16);
   line-height: 1.5;
   color: $main-font;

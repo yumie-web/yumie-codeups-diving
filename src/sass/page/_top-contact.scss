@@ -25,6 +25,7 @@
 
 // 下層 ダイビング情報
 .top-contact--info {
+  margin-top: rem(106);
   @include mq(md) {
     margin-top: rem(157);
   }
