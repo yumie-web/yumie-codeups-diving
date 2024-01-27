@@ -10,3 +10,8 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+// 2560px時下に余白が空くので、bodyに背景色追加
+.body-404 {
+  background-color: $accent;
+}
