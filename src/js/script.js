@@ -17,6 +17,7 @@ jQuery(function ($) {
     $(".sp-nav").fadeOut(400);
     $(".header").removeClass("is-color");
     $("body").removeClass("js-active");
+    return false;
   });
 
   // mv
@@ -102,6 +103,7 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
+    return false;
   });
 
   // footerの手前でto-topを固定
@@ -114,7 +116,7 @@ jQuery(function ($) {
     } else {
       topBtn.removeClass('is-active');
     }
-    // return false;
+    return false;
   });
 
   // about モーダル表示
@@ -157,6 +159,7 @@ jQuery(function ($) {
   $(".sub-faq__q").on("click", function () {
     $(this).next().slideToggle(); //.qa-box__qの次のclassをslideToggleで開く
     $(this).children(".sub-faq__icon2").toggleClass("js-open");
+    return false;
   });
 
 });
