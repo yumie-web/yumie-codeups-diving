@@ -1,22 +1,32 @@
 @use 'global' as *;
 
 .to-top  {
+  cursor: pointer;
   position: fixed;
   right: rem(15);
   bottom: rem(15);
+  width: rem(48);
+  height: rem(48);
   z-index: 1;
   @include mq(md) {
     right: rem(20);
     bottom: rem(20);
+    width: rem(80);
+    height: rem(80);
+  }
+}
+
+.to-top.is-active {
+  position: absolute;
+  bottom: calc(rem(740) + rem(16));
+  // bottom: rem(16);
+  @include mq("md") {
+    bottom: calc(rem(559) + rem(20));
+    // bottom: rem(20);
   }
 }
 
 .to-top a {
   display: block;
-  width: rem(48);
-  height: rem(48);
-  @include mq(md) {
-    width: rem(80);
-    height: rem(80);
-  }
+  width: 100%;
 }
