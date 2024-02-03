@@ -103,20 +103,36 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
+  });
+
+  topBtn.click(function () {
+    $("body,html").animate (
+      {
+        scrollTop: 0,
+      },
+      500
+    );
     return false;
   });
 
   // footerの手前でto-topを固定
+  $(".to-top").hide();
   $(window).on("scroll", function () {
-    const scrollHeight = $(document).height();
-    const scrollPosition = $(window).height() + $(window).scrollTop();
-    const footHeight = $(".footer").innerHeight();
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("footer").innerHeight();
     if (scrollHeight - scrollPosition <= footHeight) {
-      topBtn.addClass('is-active');
+      // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      $(".to-top").css({ //フッター手前に来た時
+        position: "absolute",
+        bottom: footHeight + 15 + "px",
+      });
     } else {
-      topBtn.removeClass('is-active');
-    }
-    return false;
+      $(".to-top").css({ // スクロール中は右端に固定
+        position: "fixed",
+        bottom: "15px",
+      });
+    };
   });
 
   // about モーダル表示
