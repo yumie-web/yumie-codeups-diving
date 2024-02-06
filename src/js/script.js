@@ -7,7 +7,6 @@ jQuery(function ($) {
     $(".sp-nav").fadeToggle(400);
     $(".header").toggleClass("is-color");
     $(".body").toggleClass("js-active");
-    return false;
   });
 
   // sp-nav内のaタグをクリックした際の処理
@@ -16,7 +15,6 @@ jQuery(function ($) {
     $(".sp-nav").fadeOut(400);
     $(".header").removeClass("is-color");
     $("body").removeClass("js-active");
-    // return false;
   });
 
   // mv
@@ -178,5 +176,3 @@ jQuery(function ($) {
   });
 
 });
-
-
