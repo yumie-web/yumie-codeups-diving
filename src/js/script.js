@@ -4,11 +4,10 @@ jQuery(function ($) {
   //ハンバーガー
   $(".js-hamburger").on("click", function () {
     $(".header__drawer").toggleClass("is-open");
-    // $('.sp-nav').toggleClass('is-open');
     $(".sp-nav").fadeToggle(400);
     $(".header").toggleClass("is-color");
     $(".body").toggleClass("js-active");
-    // return false;
+    return false;
   });
 
   // sp-nav内のaタグをクリックした際の処理
