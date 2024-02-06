@@ -2,12 +2,12 @@ jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
   //ハンバーガー
-  $(".js-hamburger").on("click", function () {
+  $(".js-hamburger").on("click", function (e) {
     $(".header__drawer").toggleClass("is-open");
     $(".sp-nav").fadeToggle(400);
     $(".header").toggleClass("is-color");
     $(".body").toggleClass("js-active");
-    return false;
+    e.preventDefault();
   });
 
   // sp-nav内のaタグをクリックした際の処理
