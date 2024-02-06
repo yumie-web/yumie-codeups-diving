@@ -7,6 +7,7 @@ jQuery(function ($) {
     $(".sp-nav").fadeToggle(400);
     $(".header").toggleClass("is-color");
     $(".body").toggleClass("js-active");
+    return false;
   });
 
   // sp-nav内のaタグをクリックした際の処理
@@ -99,7 +100,7 @@ jQuery(function ($) {
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
-    }
+    };
   });
 
   topBtn.click(function () {
