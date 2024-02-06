@@ -10,12 +10,12 @@ jQuery(function ($) {
   });
 
   // sp-nav内のaタグをクリックした際の処理
-  $(".sp-nav a").on("click", function () {
-    $(".header__drawer").removeClass("is-open");
-    $(".sp-nav").fadeOut(400);
-    $(".header").removeClass("is-color");
-    $("body").removeClass("js-active");
-  });
+  // $(".sp-nav a").on("click", function () {
+  //   $(".header__drawer").removeClass("is-open");
+  //   $(".sp-nav").fadeOut(400);
+  //   $(".header").removeClass("is-color");
+  //   $("body").removeClass("js-active");
+  // });
 
   // mv
   var swiper = new Swiper(".js-mv-swiper", {
