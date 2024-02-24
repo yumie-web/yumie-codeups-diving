@@ -1,8 +1,20 @@
 @use 'global' as *;
 
+.sub-campaign__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .sub-campaign__cards {
   margin-top: rem(40);
-  padding: 0 rem(33);
+  // padding: 0 rem(33);
   @include mq(md) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,15 +25,8 @@
 }
 
 .sub-campaign__card {
-  max-width: rem(540);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  @include mq(md) {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
+
+
 }
 
 .sub-campaign__card:nth-child(n + 2) {
