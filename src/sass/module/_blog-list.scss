@@ -16,6 +16,13 @@
   }
 }
 
+.blog-lists__pagenavi {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(88);
+  }
+}
+
 
 .blog-list__side {
   margin-top: rem(93);
