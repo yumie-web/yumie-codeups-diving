@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.about {
-  @include mq(md) {
-    position: relative;
-  }
-}
 
 .sub-about__inner.inner {
   max-width: rem(600);
@@ -148,10 +143,3 @@
     margin-top: 0;
   }
 }
-
-// .sub-bg.about__bg::before {
-//   z-index: 4;
-//   @include mq(md) {
-//     z-index: 1;
-//   }
-// }
