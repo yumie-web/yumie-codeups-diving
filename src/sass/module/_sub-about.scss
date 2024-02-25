@@ -1,0 +1,157 @@
+@use "global" as *;
+
+.about {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.sub-about__inner.inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(1130);
+  }
+}
+
+.sub-about__box {
+  position: relative;
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.sub-about__images {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sub-about__image1,
+.sub-about__image2 {
+  position: relative;
+}
+
+.sub-about__image1 {
+  display: none;
+  @include mq(md) {
+    width: 37.1014%;
+    margin-bottom: rem(18);
+    z-index: 2;
+    margin-bottom: rem(55);
+    display: inline-block;
+  }
+}
+
+.sub-about__image2 {
+  width: 100%;
+  z-index: 1;
+  @include mq(md) {
+    margin-left: rem(-200);
+    width: 82.4492%;
+  }
+}
+
+.about__image1::before,
+.about__image2::before {
+  content: "";
+  display: block;
+}
+
+.about__image1::before {
+  padding-top: 151.5625%;
+  @include mq(md) {
+    padding-top: 151.8796%;
+  }
+}
+
+.about__image2::before {
+  padding-top: 66.1921%;
+  @include mq(md) {
+    padding-top: 66.0227%;
+  }
+}
+
+.about__image1 img,
+.about__image2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub-about__text-contents {
+  display: block;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: rem(200);
+    right: rem(41);
+    z-index: 3;
+    width: 77.7777%;
+  }
+}
+
+.sub-about__title-sp {
+  position: absolute;
+  top: rem(24);
+  left: rem(24);
+  z-index: 2;
+  margin-top: 0;
+  color: $white;
+  width: 60%;
+  display: inline-block;
+  font-size: rem(40);
+  font-weight: 400;
+  line-height: 1;
+  font-family: $en-font-family;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.sub-about__title-pc {
+  display: none;
+  @include mq(md) {
+    font-family: $en-font-family;
+    // font-size: rem(80);
+    font-size: min(6.9vw,rem(80));
+    font-weight: 400;
+    color: $white;
+    margin-top: 0;
+    width: 47.619%;
+    line-height: calc(100 / 80);
+    display: block;
+  }
+}
+
+.sub-about__text-content {
+  width: 100%;
+  margin-top: rem(40);
+  @include mq(md) {
+    width: 47.619%;
+    margin-top: 0;
+  }
+}
+
+.sub-about__text {
+  color: $main-font;
+  // margin-top: rem(16);
+  @include mq(md) {
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+// .sub-bg.about__bg::before {
+//   z-index: 4;
+//   @include mq(md) {
+//     z-index: 1;
+//   }
+// }
