@@ -100,11 +100,11 @@ jQuery(function ($) {
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
-    };
+    }
   });
 
   topBtn.click(function () {
-    $("body,html").animate (
+    $("body,html").animate(
       {
         scrollTop: 0,
       },
@@ -121,25 +121,27 @@ jQuery(function ($) {
     var footHeight = $("footer").innerHeight();
     if (scrollHeight - scrollPosition <= footHeight) {
       // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
-      $(".to-top").css({ //フッター手前に来た時
+      $(".to-top").css({
+        //フッター手前に来た時
         position: "absolute",
         bottom: footHeight + 15 + "px",
       });
     } else {
-      $(".to-top").css({ // スクロール中は右端に固定
+      $(".to-top").css({
+        // スクロール中は右端に固定
         position: "fixed",
         bottom: "15px",
       });
-    };
+    }
   });
 
   // about モーダル表示
-  $(".sub-about-gallery__content img").click(function () {
-    // .sub-about-gallery__content imgをクリックした時
-    $(".sub-about-gallery__model").html($(this).prop("outerHTML"));
-    // クリックされた画像要素の外部htmlを取得→.sub-about-gallery__modelの中に挿入
+  $(".js-photo").click(function () {
+    // .gallery__contentをクリックした時
+    $(".js-overlay").html($(this).prop("outerHTML"));
+    // クリックされた画像要素の外部htmlを取得→.gallery__modelの中に挿入
     // クリックされた画像をモデルとして表示するためのコンテンツを生成
-    $(".sub-about-gallery__model").fadeIn(200);
+    $(".js-overlay").fadeIn(200);
     $(".js-header, .js-to-top").hide();
     $("html, body").css("overflow", "hidden");
     // スクロール禁止
@@ -147,8 +149,8 @@ jQuery(function ($) {
   });
 
   // about モーダル非表示
-  $(".sub-about-gallery__model").click(function () {
-    $(".sub-about-gallery__model").fadeOut(200);
+  $(".js-overlay").click(function () {
+    $(".js-overlay").fadeOut(200);
     $(".js-header, .js-to-top").fadeIn(200);
     $("html, body").removeAttr("style");
     return false;
@@ -175,5 +177,4 @@ jQuery(function ($) {
     $(this).children(".sub-faq__icon2").toggleClass("js-open");
     return false;
   });
-
 });

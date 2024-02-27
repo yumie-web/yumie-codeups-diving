@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.sub-about-gallery {
+.gallery {
   position: relative;
 }
 
-.sub-about-gallery__inner.inner {
+.gallery__inner.inner {
   max-width: rem(600);
   width: 100%;
   margin: auto;
@@ -13,7 +13,7 @@
   }
 }
 
-.sub-about-gallery::before {
+.gallery::before {
   content: none;
   position: absolute;
   @include mq(md) {
@@ -29,7 +29,7 @@
   }
 }
 
-.sub-about-gallery__contents {
+.gallery__contents {
   display: grid;
   gap: rem(8);
   grid-auto-flow: dense;
@@ -41,7 +41,7 @@
   }
 }
 
-.sub-about-gallery__content img {
+.gallery__content img {
   aspect-ratio: 345 / 219; // 横縦
   object-fit: cover;
   height: 100%;
@@ -52,8 +52,8 @@
   }
 }
 
-.sub-about-gallery__content:nth-child(6n + 1) img,
-.sub-about-gallery__content:nth-child(6n + 6) img {
+.gallery__content:nth-child(6n + 1) img,
+.gallery__content:nth-child(6n + 6) img {
   aspect-ratio: 345 / 523;
   height: 100%;
   width: 100%;
@@ -64,7 +64,7 @@
 }
 
 // 1枚目(縦長)
-.sub-about-gallery__content:nth-child(6n + 1) {
+.gallery__content:nth-child(6n + 1) {
   overflow: hidden;
   grid-row: span 2;
   @include mq(md) {
@@ -74,8 +74,8 @@
 }
 
 // 2枚目、3枚目
-.sub-about-gallery__content:nth-child(6n + 2),
-.sub-about-gallery__content:nth-child(6n + 3) {
+.gallery__content:nth-child(6n + 2),
+.gallery__content:nth-child(6n + 3) {
   grid-row: span 1;
   @include mq(md) {
     grid-column: span 6;
@@ -83,8 +83,8 @@
 }
 
 // 4枚目、5枚目
-.sub-about-gallery__content:nth-child(6n + 4),
-.sub-about-gallery__content:nth-child(6n + 5) {
+.gallery__content:nth-child(6n + 4),
+.gallery__content:nth-child(6n + 5) {
   grid-row: span 1;
   @include mq(md) {
     grid-column: span 6;
@@ -92,7 +92,7 @@
 }
 
 // 6番目(縦長)
-.sub-about-gallery__content:nth-child(6n + 6) {
+.gallery__content:nth-child(6n + 6) {
   grid-row: span 2;
   @include mq(md) {
     grid-column: span 5;
@@ -100,8 +100,8 @@
   }
 }
 
-.sub-about-gallery__model {
-  background-color: rgba(32, 32, 32, 0.80);
+.gallery__modal {
+  background-color: rgba(32, 32, 32, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -109,19 +109,33 @@
   bottom: 0;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 100;
   display: none;
 }
 
-.sub-about-gallery__model img {
+.gallery__modal img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // margin: auto;
   display: block;
-  aspect-ratio: 920 / 586;
+  margin: auto;
+  aspect-ratio: 345 / 219;
   object-fit: cover;
-  max-width: rem(920);
-  // width: 100%;
+  width: 100%;
+  max-height: 80%;
+  max-width: rem(500);
+  @include mq(md) {
+    aspect-ratio: 920 / 586;
+    max-width: rem(920);
+  }
 }
+
+// .gallery__model .gallery__content:nth-child(6n + 1) img,
+// .gallery__model .gallery__content:nth-child(6n + 6) img {
+//   aspect-ratio: 345 / 523;
+//   @include mq(md) {
+//     aspect-ratio: 492 / 746;
+//   }
+// }
+
