@@ -95,19 +95,19 @@ summary::-webkit-details-marker {
 }
 
 .blog-side__accordion[open] .blog-side__accordion-lists {
-  animation: fadeIn 0.5s ease;
+  // animation: fadeIn 0.5s ease;
 }
 
-@keyframes fadeIn { //月をふわっと表示させる
-  0% {
-    opacity: 0; /* 透明 */
-    transform: translateY(-10px); /* 上から表示 */
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
+// @keyframes fadeIn { //月をふわっと表示させる
+//   0% {
+//     opacity: 0; /* 透明 */
+//     transform: translateY(-10px); /* 上から表示 */
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }
 
 .blog-side__accordion-lists {
   margin-top: rem(4);

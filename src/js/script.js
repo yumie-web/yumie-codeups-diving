@@ -177,4 +177,31 @@ jQuery(function ($) {
     $(this).children(".sub-faq__icon2").toggleClass("js-open");
     return false;
   });
+
+  // モーダル
+  var animTiming = {
+    duration: 300,
+    easing: "easeInOut",
+  };
+
+  // アコーディオンを閉じるときのキーフレーム
+  var closingAnimation = (answer) => {
+    return {
+      height: 0,
+      opacity: 0,
+    };
+  };
+  
+  // アコーディオンを開くときのキーフレーム
+  var openingAnimation = (answer) => {
+    return {
+      height: answer.offsetHeight + "px",
+      opacity: 1,
+    };
+  };
+
+
+
+
+
 });
