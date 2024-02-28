@@ -1,14 +1,7 @@
 @use "global" as *;
 
 .blog-side {
-  max-width: 100%;
-  margin-inline: auto;
-  // width: 100%;
-  width: max(rem(294), 75vw);
-  @include mq(md) {
-    max-width: rem(294);
-    width: 100%;
-  }
+
 }
 
 .blog-side__contents:nth-child(n + 2) {
